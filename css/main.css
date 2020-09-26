@@ -1,0 +1,344 @@
+/* main.css */
+
+/*==========
+1.Global styles
+==========*/
+
+html {
+
+    color: white;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(199,199,199,1) 96%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(199,199,199,1) 96%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(199,199,199,1) 96%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+    font-family: 'Tajawal', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    width: 1200px;
+}
+
+
+h2,
+.skills h3{
+    font-family: 'Cinzel', serif;
+}
+
+h2,
+h3 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-variant: small-caps;
+}
+
+h4 {
+    color: #A3A4A5;
+    text-align: center;
+}
+
+.contact h2,
+.developer h2,
+.mail-side h3,
+.mail-side a {
+    padding-left: 25px;
+    margin-left: 25px;
+}
+
+p,
+.skills h3 {
+    font-size: 1.33rem
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+.shadow,
+#logo-tag {
+    color: #4B4B4B;
+    opacity: .45;
+}
+
+a:hover .shadow {
+    text-decoration:none;
+    display: inline-block;
+}
+
+/*==========
+2.Grid
+==========*/
+
+.full-width {
+    clear: both;
+    float: left;
+    margin: 0 auto 0 auto;
+    content: " ";
+    display: block;
+    width: 1200px;
+}
+
+.half-width {
+    float: left;
+    width: 600px;
+}
+
+.third-width {
+    float: left;
+    width: 400px;
+}
+
+
+/*==========
+3.Header
+==========*/
+
+header {
+    background-color: black;
+    height: 100px;
+}
+
+.logo-wrapper {
+    height: 100%;
+    padding-left: 50px;
+    position: relative;
+    text-align: center;
+    width: 250px;
+}
+
+a#logo-name {
+    font-family: 'Red Rose', cursive;
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    line-height: 20px;
+
+/*positioning*/
+    position: relative;
+    top: 40px;
+    z-index: 1;
+/************/
+}
+
+a#logo-name:hover {
+    font-size: 1.55rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* selected link */
+a#logo-name:active {
+  color: white;
+}
+
+#logo-tag {
+    font-size: 7rem;
+    margin: 0;
+    position: relative;
+    top: -40px;
+/************/
+}
+
+
+/* Nav Bar */
+nav {
+    float: right;
+}
+
+nav a {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav li {
+    margin: 50px 30px 0;
+}
+/* unvisited link */
+
+a:link {
+color: inherit;
+text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: hotpink;
+}
+
+
+/*==========
+Hero
+==========*/
+.hero{
+    background: url("../img/hero.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+
+.hero h2{
+    float: right;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-top: 100px;
+    padding-right: 50px;
+    word-spacing: 5px;
+}
+
+.loud-text {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/*==========
+Skills
+==========*/
+.skills {
+    margin-top: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skills p {
+    font-size: 1.33rem;
+    padding: 0 40px;
+}
+
+.skills h3 {
+    font-weight: 800;
+}
+
+.skills a,
+.developer a {
+    float: right;
+    padding-right: 90px;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.right p{
+    padding-bottom: 25px;
+}
+
+a .shadow {
+    font-size: 2rem;
+    font-weight: 700;
+}
+/*==========
+More Than A
+Developer
+===========*/
+.developer img {
+    border: 7px solid white;
+    display: block;
+    height: 384px;
+    margin: auto;
+    width: 400px;
+}
+
+.developer h2 {
+    margin-left: 0;
+}
+
+.developer p {
+    padding-right: 90px;
+    text-align: justify;
+}
+
+
+/*==========
+Footer (Contact)
+==========*/
+footer {
+    position:
+}
+
+.contact {
+    border-top: 1px solid #575757;
+    margin: 100px 0;
+    padding-top: 25px;
+}
+
+.contact h2 {
+    line-height: 20px;
+    margin: 0 0 50px;
+}
+
+.contact ul {
+    padding: 0;
+}
+.social-media li{
+    margin-right: 25px;
+}
+
+.contact a {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#envelope {
+    margin-right: 15px;
+}
+
+#wwwd {
+    color: #a3a3a3;
+    font-size: 1rem;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+/* selected link */
+a#wwwd:active {
+  color: hotpink;
+}
+
+a#wwwd:hover {
+    text-decoration: none;
+}
+
+a#wwwd:visited {
+    text-decoration: none;
+}
+/*==========
+Table of Contents
+============
+1.Global Styles
+2.Grid
+3.Header
+4.About
+5.Work
+6.Contact
+
+
+===========
+Notes
+==========
+
+FONTS
+•••••••••••••
+font-family: 'Cinzel', serif;
+font-family: 'Red Rose', cursive;
+font-family: 'Tajawal', sans-serif;
+*/
