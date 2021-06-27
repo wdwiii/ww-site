@@ -1,0 +1,9 @@
+.about {
+    display: grid;
+    grid-auto-rows: repeat(5, min-content);
+    grid-row-gap: 1rem;
+
+    &__photo {
+        width: 50%;
+    }
+}
