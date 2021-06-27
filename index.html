@@ -3,81 +3,68 @@
     <head>
         <meta charset="utf-8">
         <title>WillieWhitfield.com</title>
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Red+Rose:wght@400;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <header class="full-width">
-            <div class="half-width">
-                <div class="logo-wrapper">
-                    <a href="https://williewhitfield.com" id="logo-name">Willie<br>Whitfield</a>
-                    <h1 id="logo-tag">&lt;/&gt;</h1>
-                </div>
-            </div>
-            <div class="half-width">
-                <nav>
-                    <ul class="nav-bar">
-                        <li><a href="">home</a></li>
-                        <li><a href="">about</a></li>
-                        <li><a href="">portfolio</a></li>
-                        <li><a href="">contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <nav class="navigation">
+            <a href="https://williewhitfield.com" class="navigation__logo">Willie Whitfield</a>
+            <ul class="navigation__list">
+                <li class="navigation__logo"><a href="" class="navigation__link">home</a></li>
+                <li class="navigation__logo"><a href="" class="navigation__link">about</a></li>
+                <li class="navigation__logo"><a href="" class="navigation__link">portfolio</a></li>
+                <li class="navigation__logo"><a href="" class="navigation__link">contact</a></li>
+            </ul>
+        </nav>
+
+        <header class="header">
+                <h1 class="heading-1">A strong brand speaks volumes A strong site <span class="heading-1 heading-1--strong">amplifies</span> it</h1>
         </header>
-        <main>
-            <div class="full-width hero">
-                <h2>A strong <u>brand</u> speaks volumes<br>
-                    A strong site <span class="loud-text">amplifies</span> it
-                </h2>
-            </div>
-            <div class="full-width skills">
-                <div class="third-width left">
-                    <img src="img/html-logo.png" alt="html-logo">
-                    <h3>Hand-Coded<br>HTML</h3>
-                    <p>My focus is writing clean, well-formatted, semantic HTML5 by hand to make sure that the content is easy to read, easy to collaborate, trouble-shoot and accessible.</p>
+
+
+        <main class="main--homepage">
+            <section class="features">
+                <div class="feature">
+                    <img src="img/html-logo.png" alt="html-logo" class="feature__icon">
+                    <h3 class="heading-3">Hand-Coded Websites</h3>
+                    <p class="paragraph">No cookie cutter websites here. Each project is hand written to ensure that your site is well-formatted, easily readable, and fast loading.</p>
                 </div>
-                <div class="third-width mid">
-                    <img src="img/css-logo.png" alt="css-logo">
-                    <h3>Well-Organized<br>CSS</h3>
-                    <p>I pride myself on writing CSS that is easy to read and build on. I focus on keeping my CSS lean and fast to load, and I make it a habit to stay up to date on current best practices.</p>
+                <div class="feature">
+                    <img src="img/css-logo.png" alt="css-logo" class="feature__icon">
+                    <h3 class="heading-3">Responsive Design</h3>
+                    <p class="paragraph">Web content flows freely across all screen resolutions giving your visitors the same user-friendly experience no matter what device they're using.</p>
                 </div>
-                <div class="third-width right">
-                    <img src="img/pencil.png" alt="pencil">
-                    <h3>Ease Converting<br>Designs into Code</h3>
-                    <p>You can trust me to take a designer's PSD and quickly & accurately convert it into a webpage that is pixel-perfect match.</p>
+                <div class="feature">
+                    <img src="img/pencil.png" alt="pencil" class="feature__icon">
+                    <h3 class="heading-3">Convert Design Into Code</h3>
+                    <p class="paragraph">Transform static designs into pixel-perfect HTML5/CSS3 with cross-broswer compatibility. Code is validated to meet W3C standards.</p>
                 </div>
-                <a href="#"><span class="shadow">&lt;/</span>View my portfolio<span class="shadow">&gt;</span></a>
-            </div>
-            <div class="full-width developer">
-                <h2>More than a developer.</h2>
-                <div class="half-width">
-                    <img src="img/profile-pic.JPG" alt="profile">
-                </div>
-                <div class="half-width">
-                    <p>I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. I ave some bio stuff here. </p>
-                    <a href="#"><span class="shadow">&lt;/</span>Learn more about me<span class="shadow">&gt;</span></a>
-                </div>
-            </div>
+                <a href="#" class="page-link">View my portfolio</a>
+            </section>
+
+            <section class="about">
+                    <h2 class="heading-2">More than a developer.</h2>
+                    <img src="img/profile-pic.JPG" alt="Willie Whitfield profile" class="about__photo">
+                    <p class="paragraph">I am a front-end web developer based in Fort Lauderdale, Florida. I am passionate about designing and developing rich, user-friendly web experiences.</p>
+                    <p class="paragraph">I have been a coding/graphic design hobbyist for several years, but recently enrolled in the Skillcrush Coding Academy to polish and further develop my web skills. I focus on creating easy-to-use, responsive web designs with HTML &amp; CSS. </p>
+                    <a href="#" class="page-link">Learn more about me</a>
+            </section>
         </main>
-        <footer>
-            <div class="full-width contact">
-                <h2>Connect with me</h2>
-                <div class="half-width mail-side">
-                    <h3>Email</h3>
-                    <a href="mailto:hello@williewhitfield.com"><img src="img/envelope.png" alt="envelope icon" id="envelope" />hello@williewhitfield.com</a>
-                </div>
-                <div class="half-width social-media">
-                    <h3>Social Media</h3>
-                    <ul>
-                        <li><img src="img/linkedin.png" alt="linkedin"></li>
-                        <li><img src="img/facebook.png" alt="facebook"></li>
-                    </ul>
-                </div>
-            </div>
-            <a href="https://williewhitfield.com" id="wwwd">Willie Whitfield Web Development</a>
+
+        <footer class="footer">
+            <h2 class="heading-2">Connect with me</h2>
+            <a href="mailto:hello@williewhitfield.com" class="footer__link">@</a>
+
+            <a href="https://facebook.com" target="_blank" class="footer__link">FB</a>
+
+            <a href="https://twitter.com" target="_blank" class="footer__link">TW</a>
+
+            <a href="https://github.com/wdwiii" target="_blank" class="footer__link">GH</a>
+
+            <a href="https://linkedin.com" target="_blank" class="footer__link">LI</a>
+
+            <a href="https://slack.com" target="_blank" class="footer__link">SL</a>
         </footer>
     </body>
 </html>
