@@ -4,67 +4,101 @@
         <meta charset="utf-8">
         <title>WillieWhitfield.com</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Red+Rose:wght@400;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Willie Whitfield Web Deveopment</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Libre+Barcode+128+Text&family=Montserrat:wght@100;300;500&family=Raleway:wght@200&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
         <nav class="navigation">
-            <a href="https://williewhitfield.com" class="navigation__logo">Willie Whitfield</a>
+            <a href="https://williewhitfield.com" class="navigation__logo">williewhitfield</a>
             <ul class="navigation__list">
-                <li class="navigation__logo"><a href="" class="navigation__link">home</a></li>
-                <li class="navigation__logo"><a href="" class="navigation__link">about</a></li>
-                <li class="navigation__logo"><a href="" class="navigation__link">portfolio</a></li>
-                <li class="navigation__logo"><a href="" class="navigation__link">contact</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">Portfolio</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">Contact</a></li>
             </ul>
         </nav>
 
         <header class="header">
-                <h1 class="heading-1">A strong brand speaks volumes A strong site <span class="heading-1 heading-1--strong">amplifies</span> it</h1>
+                <h1 class="heading-1">
+                    <span class="heading-1 heading-1--top">A strong brand speaks volumes</span>
+                    <span class="heading-1 heading-1--bottom">A strong site <span class="heading-1 heading-1--strong">amplifies</span> it
+                </h1>
         </header>
 
 
         <main class="main--homepage">
             <section class="features">
                 <div class="feature">
-                    <img src="img/html-logo.png" alt="html-logo" class="feature__icon">
+                    <svg class="feature__icon">
+                        <use href="img/sprite.svg#icon-code"></use>
+                    </svg>
                     <h3 class="heading-3">Hand-Coded Websites</h3>
                     <p class="paragraph">No cookie cutter websites here. Each project is hand written to ensure that your site is well-formatted, easily readable, and fast loading.</p>
                 </div>
                 <div class="feature">
-                    <img src="img/css-logo.png" alt="css-logo" class="feature__icon">
+                    <svg class="feature__icon">
+                        <use href="img/sprite.svg#icon-devices"></use>
+                    </svg>
                     <h3 class="heading-3">Responsive Design</h3>
                     <p class="paragraph">Web content flows freely across all screen resolutions giving your visitors the same user-friendly experience no matter what device they're using.</p>
                 </div>
                 <div class="feature">
-                    <img src="img/pencil.png" alt="pencil" class="feature__icon">
+                    <svg class="feature__icon">
+                        <use href="img/sprite.svg#icon-design"></use>
+                    </svg>
                     <h3 class="heading-3">Convert Design Into Code</h3>
                     <p class="paragraph">Transform static designs into pixel-perfect HTML5/CSS3 with cross-broswer compatibility. Code is validated to meet W3C standards.</p>
                 </div>
-                <a href="#" class="page-link">View my portfolio</a>
+                <a href="#" class="btn">View my portfolio</a>
             </section>
 
             <section class="about">
                     <h2 class="heading-2">More than a developer.</h2>
-                    <img src="img/profile-pic.JPG" alt="Willie Whitfield profile" class="about__photo">
-                    <p class="paragraph">I am a front-end web developer based in Fort Lauderdale, Florida. I am passionate about designing and developing rich, user-friendly web experiences.</p>
+                    <figure class="about__photo">
+                        <img src="img/profile.jpg" alt="Willie Whitfield profile">
+                    </figure>
+                    <p class="paragraph">My name is Willie Whitfield and I am a front-end web developer based in Fort Lauderdale, Florida. I am passionate about designing and developing rich, user-friendly web experiences.</p>
                     <p class="paragraph">I have been a coding/graphic design hobbyist for several years, but recently enrolled in the Skillcrush Coding Academy to polish and further develop my web skills. I focus on creating easy-to-use, responsive web designs with HTML &amp; CSS. </p>
-                    <a href="#" class="page-link">Learn more about me</a>
+                    <a href="#" class="btn">Learn more about me</a>
             </section>
         </main>
 
         <footer class="footer">
             <h2 class="heading-2">Connect with me</h2>
-            <a href="mailto:hello@williewhitfield.com" class="footer__link">@</a>
+            <a href="mailto:hello@williewhitfield.com" class="footer__link">
+                <svg class="footer__icon">
+                    <use href="img/sprite.svg#icon-email"></use>
+                </svg>
+            </a>
 
-            <a href="https://facebook.com" target="_blank" class="footer__link">FB</a>
+            <a href="https://twitter.com" target="_blank" class="footer__link">
+                <svg class="footer__icon">
+                    <use href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+            </a>
 
-            <a href="https://twitter.com" target="_blank" class="footer__link">TW</a>
+            <a href="https://github.com/wdwiii" target="_blank" class="footer__link">
+                <svg class="footer__icon">
+                    <use href="img/sprite.svg#icon-github"></use>
+                </svg>
+            </a>
 
-            <a href="https://github.com/wdwiii" target="_blank" class="footer__link">GH</a>
+            <a href="https://linkedin.com" target="_blank" class="footer__link">
+                <svg class="footer__icon">
+                    <use href="img/sprite.svg#icon-linkedin"></use>
+                </svg>
+            </a>
 
-            <a href="https://linkedin.com" target="_blank" class="footer__link">LI</a>
-
-            <a href="https://slack.com" target="_blank" class="footer__link">SL</a>
+            <a href="https://slack.com" target="_blank" class="footer__link">
+                <svg class="footer__icon">
+                    <use href="img/sprite.svg#icon-slack"></use>
+                </svg>
+            </a>
         </footer>
     </body>
 </html>
