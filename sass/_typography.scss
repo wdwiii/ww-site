@@ -10,6 +10,7 @@
     font-size: 3.5rem;
     line-height: 4rem;
     text-align: center;
+    flex: 0 0 85%;
 
     &--top,
     &--bottom {
@@ -25,7 +26,7 @@
 
 .heading-2 {
     @extend %heading;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 }
 
 .heading-3 {
@@ -42,16 +43,18 @@
 
 .btn:link,
 .btn:visited {
+    align-self: center;
     color: $color-white;
     cursor: pointer;
     font-variant: small-caps;
     font-weight: 300;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem auto 0;
     padding: 1rem 1.5rem;
     position: relative;
+    text-align: center;
     text-decoration: none;
     transition: all .2s, color .4s;
+    width: 15rem;
 
     border: 1px solid $color-secondary;
     transition: color .2s, border-top-color .35s, border-right-color .6s, border-bottom-color .95s, border-left-color 1.3s;
