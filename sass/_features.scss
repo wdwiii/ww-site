@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-row-gap: 2rem;
+    justify-items: center;
 
 }
 
@@ -9,9 +10,17 @@
     display: flex;
     flex-direction: column;
 
+    text-align: center;
+    width: 85%;
+
     &__icon {
-        height: 2rem;
-        width: 2rem;
+        fill:  $color-secondary;
+        height: 3.5rem;
+        width: 3.5rem;
         margin: 0 auto;
+    }
+
+    .heading-3 {
+        //text-align: center;
     }
 }
