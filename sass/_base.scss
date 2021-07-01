@@ -1,3 +1,19 @@
+//Colors
+$color-primary: #1e847f;
+$color-primary-light: lighten(#1e847f, 10%);
+$color-secondary: #ecc19c;
+$color-secondary-light: lighten(#ecc19c, 10%);
+$color-white: #fcf7eeff;
+$color-black: #011314ff;
+$color-black-shadow: rgba(#011314, 0.5);
+
+//Fonts
+//$font-primary: 'Lato', sans-serif;
+$font-primary: 'Raleway', sans-serif;
+$font-display: 'Montserrat', sans-serif; //font-weights 300, 400 & 600
+$font-logo: 'Libre Barcode 128 Text', cursive;
+
+
 *,
 *::before,
 *::after {
@@ -12,14 +28,21 @@ html {
 }
 
 body {
-    padding: 2rem;
+    background-image: linear-gradient(135deg, darken($color-primary-light, 14%) 0, $color-primary 25%, lighten($color-black, 2%) 50%);
+    color: $color-white;
+    font-family: $font-primary;
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 1.8rem;
+
     display: grid;
-    grid-template-rows: min-content 30vh repeat(2, min-content);
-    grid-row-gap: 2rem;
+    grid-template-rows: min-content 50vh repeat(2, min-content);
+
 }
 
 .main--homepage {
     display: grid;
     grid-template-rows: repeat(2, min-content);
     grid-row-gap: 3rem;
+    padding: 2rem;
 }
