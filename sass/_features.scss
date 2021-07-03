@@ -1,7 +1,6 @@
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-row-gap: 2rem;
     justify-items: center;
 
 }
@@ -11,16 +10,16 @@
     flex-direction: column;
 
     text-align: center;
-    width: 85%;
+    width: 80%;
 
     &__icon {
         fill:  $color-secondary;
-        height: 3.5rem;
-        width: 3.5rem;
+        height: 4rem;
+        width: 4rem;
         margin: 0 auto;
     }
 
     .heading-3 {
-        //text-align: center;
+        font-size: 2rem;
     }
 }
