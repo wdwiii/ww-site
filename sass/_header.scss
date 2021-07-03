@@ -1,11 +1,21 @@
 .header {
-    background-image: linear-gradient($color-black-shadow, $color-black-shadow), url('../img/mb-unsplash.png');
+    background-image: linear-gradient($color-black-shadow-2, $color-black-shadow-2), url('../img/mb-unsplash.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 1.5rem 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+
+    .heading-1 {
+        width: 90%;
+
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media only screen and (min-width: 33.125em) and (max-width: 46.875em) {
+            width: 64%;
+        }
+    }
 }
