@@ -44,10 +44,22 @@ body {
     display: grid;
     grid-template-rows: 15vh 85vh repeat(2, min-content);
 
+    @media only screen and (min-width: 39.375em) {
+        grid-template-rows: 10vh 90vh repeat(2, min-content);
+    }
+
+    @media only screen and (min-width: 51.875em) {
+        grid-template-rows: 10vh 50vh repeat(2, min-content);
+    }
+
 }
 
 .main--homepage {
     display: grid;
     grid-template-rows: calc(85vh - 2rem) min-content;
     grid-row-gap: 1.5rem;
+
+    @media only screen and (min-width: 51.875em) {
+        grid-template-rows: repeat(2, min-content);
+    }
 }
