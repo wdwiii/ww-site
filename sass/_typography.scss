@@ -10,6 +10,11 @@
     font-size: 4.75rem;
     line-height: 5rem;
 
+    @media only screen and (min-width: 33.125em) and (max-width: 46.25em){
+        font-size: 5.75rem;
+        line-height: 6rem;
+    }
+
 
     &--strong {
         color: $color-secondary;
@@ -37,6 +42,15 @@
     line-height: 2rem;
 }
 
+.btn {
+    justify-self: center;
+
+    @media only screen and (min-width: 51.875em) {
+        justify-self: end;
+        margin-right: 2.5rem;
+    }
+}
+
 .btn:link,
 .btn:visited {
     align-self: center;
@@ -45,7 +59,6 @@
     display: block;
     font-variant: small-caps;
     font-weight: 300;
-    margin: 0 auto;
     padding: 1rem 1.5rem;
     position: relative;
     text-align: center;
