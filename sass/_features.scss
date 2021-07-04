@@ -1,10 +1,29 @@
 .features {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: 2rem repeat(3, [feat-start] 1fr [feat-end]) 2rem;
+    grid-template-rows: repeat(4, min-content);
+    grid-row-gap: 5.5rem;
+    align-items: center;
     justify-items: center;
 
     margin-top: 2rem;
 
+    @media only screen and (min-width: 51.875em) {
+        grid-template-rows: repeat(2, min-content);
+        align-items: start;
+        grid-row-gap: 5rem;
+    }
+
+
+    .btn {
+        grid-row: 4;
+        grid-column: feat-start 2;
+
+        @media only screen and (min-width: 51.875em) {
+            grid-column: feat-start 3;
+            grid-row: 2;
+        }
+    }
 }
 
 .feature {
@@ -12,7 +31,39 @@
     flex-direction: column;
 
     text-align: center;
-    width: 80%;
+    width: 90%;
+    max-width: 33rem;
+
+    &--1 {
+        grid-column: feat-start 1 / feat-end 3;
+    }
+
+    &--2 {
+        grid-column: feat-start 1 / feat-end 3;
+    }
+
+    &--3 {
+        grid-column: feat-start 1 / feat-end 3;
+    }
+
+    @media only screen and (min-width: 51.875em) {
+
+        &--1 {
+            grid-column: feat-start 1 / feat-end 1;
+            grid-row: 1 / 2;
+        }
+
+        &--2 {
+            grid-column: feat-start 2 / feat-end 2;
+            grid-row: 1 / 2;
+        }
+
+        &--3 {
+            grid-column: feat-start 3 / feat-end 3;
+            grid-row: 1 / 2;
+        }
+    }
+
 
     &__icon {
         fill:  $color-secondary;
