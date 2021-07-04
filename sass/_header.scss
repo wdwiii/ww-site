@@ -14,8 +14,8 @@
         left: 50%;
         transform: translateX(-50%);
 
-        @media only screen and (min-width: 33.125em) and (max-width: 46.875em) {
-            width: 64%;
+        @media only screen and (max-width: 46.25em) {
+            max-width: 57.5rem;
         }
     }
 }
