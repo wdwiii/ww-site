@@ -5,31 +5,114 @@
     grid-row-gap: 1.75rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    overflow: hidden;
+
+    @media only screen and (min-width: 51.875em) {
+        // grid-template-rows: repeat(4,[abt-row] min-content);
+        // grid-template-columns: [full-start] 2rem [header-start] repeat(6, [abt-col] 1fr [abt-col-end]) 2rem [full-end];
+        // align-content: center;
+
+        grid-template-rows: repeat(4,[abt-row-srart] min-content [abt-row-end]);
+        grid-template-columns: [full-start] 2rem [photo-start] 1fr [photo-end] 5rem [abt-col-start] 1fr [abt-col-end] 2rem [full-end];
+        grid-template-areas: ". photo . title ."
+                             ". photo . text ."
+                             ". photo . text ."
+                             ". photo . btn .";
+
+    }
+
 
     .heading-2 {
         grid-column: abt-col 1 / abt-col-end 3;
+
+        @media only screen and (min-width: 51.875em) {
+            //grid-column: header-start / full-end;
+            grid-area: title;
+        }
     }
 
     &__photo {
         background-image: linear-gradient(rgba($color-black, .8), rgba($color-black, .8)), url('../img/profile.jpg');
          grid-row: abt-row 2 / span 1;
-        grid-column: 1 / -1;
+        grid-column: full-start / full-end;
         display: flex;
         justify-content: center;
         height: 20rem;
 
+        @media only screen and (min-width: 39.375em) {
+            height: 25rem;
+        }
+
+        @media only screen and (min-width: 51.875em) {
+            border: 1px solid $color-secondary;
+            border-radius: .5rem;
+            justify-self: center;
+            grid-area: photo;
+            width: 100%;
+            max-width: 50rem;
+            height: 30rem;
+            overflow: hidden;
+        }
+
+
         img {
         height: 100%;
+
+            @media only screen and (min-width: 51.875em) {
+                transform: scale(1.3) translateY(25px);
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+
+        grid-column: abt-col 1 / abt-col-end 3;
+        flex-direction: column;
+
+        @media only screen and (min-width: 51.875em) {
+            grid-area: text;
         }
     }
 
     .paragraph {
         grid-column: abt-col 1 / abt-col-end 3;
+        justify-self: center;
+        margin-bottom: 1rem;
+
+        @media only screen and (min-width: 51.875em) {
+            justify-self: start;
+            // width: 75%;
+            //max-width: 48rem;
+        }
+
+        @media only screen and (min-width: 53.125em) {
+            //max-width: 37rem;
+        }
+
+        &:first-of-type {
+            @media only screen and (min-width: 51.875em) {
+
+            }
+        }
+
+        &:last-of-type {
+            @media only screen and (min-width: 51.875em) {
+
+            }
+        }
     }
 
     .btn {
         grid-row: abt-row 5 / span 1;
         grid-column: 1 / -1;
+
+        @media only screen and (min-width: 51.875em) {
+            // grid-row: abt-row 4;
+            // grid-column: abt-col 3;
+            grid-area: btn;
+        }
     }
 
 }
