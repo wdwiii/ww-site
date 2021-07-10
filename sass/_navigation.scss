@@ -46,6 +46,11 @@
         @media only screen and (min-width: 39.375em) {
             width: auto;
         }
+
+        @media only screen and (min-width: 52.5em) {
+            width: 40%;
+        }
+
     }
 
     &__link:link,
