@@ -1,10 +1,8 @@
 .about {
     display: grid;
-    grid-template-rows: repeat(5,[abt-row] min-content);
+    grid-template-rows: repeat(4,[abt-row] min-content);
     grid-template-columns: [full-start] 2rem repeat(3, [abt-col] 1fr [abt-col-end]) 2rem [full-end];
-    grid-row-gap: 1.75rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    grid-row-gap: 3.25rem;
     overflow: hidden;
 
     @media only screen and (min-width: 51.875em) {
@@ -79,7 +77,10 @@
     .paragraph {
         grid-column: abt-col 1 / abt-col-end 3;
         justify-self: center;
-        margin-bottom: 1rem;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
 
         @media only screen and (min-width: 51.875em) {
             justify-self: start;
@@ -105,7 +106,7 @@
     }
 
     .btn {
-        grid-row: abt-row 5 / span 1;
+        grid-row: abt-row 4 / span 1;
         grid-column: 1 / -1;
 
         @media only screen and (min-width: 51.875em) {
