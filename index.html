@@ -1,118 +1,161 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>WillieWhitfield.com</title>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Willie Whitfield Web Deveopment</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Libre+Barcode+128+Text&family=Montserrat:wght@100;300;500&family=Raleway:wght@200&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <title>WillieWhitfield.com</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Willie Whitfield Web Deveopment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <h1 class="heading-1">
+          <img
+            src="img/ww-logo.svg"
+            alt="Willie Whitfield Web Development"
+            class="header__logo"
+          />
+          <!-- <svg class="skill-icon">
+            <use href="img/ww-logo.svg"></use>
+          </svg> -->
+        </h1>
+      </nav>
+      <div class="hero">
+        <h1 class="heading-2">
+          A strong brand speaks volumes.
+          <br />
+          A strong site <em>amplifies</em> it.
+        </h1>
+        <button>Let's Connect</button>
+      </div>
+    </header>
 
-    </head>
+    <section class="features-section">
+      <figure class="feature">
+        <h4 class="heading-4">Hand Coded Webpages</h4>
+        <p class="feature__text">
+          No cookie cutter websites here. Each project is hand written to ensure
+          that your code is semantic,fast loading and clear of the 'code bloat'
+          that can negatively impact SEO.
+        </p>
+      </figure>
+      <figure class="feature">
+        <h4 class="heading-4">Responsive Design</h4>
+        <p class="feature__text">
+          Web content flows freely across all screen resolutions giving your
+          visitors the same user-friendly experience no matter what device
+          they're using.
+        </p>
+      </figure>
+      <figure class="feature">
+        <h4 class="heading-4">Convert Design Into Code</h4>
+        <p class="feature__text">
+          Already have a design, great! Transform static designs into beautiful,
+          easy to maintain code that brings give your visitors a rich and
+          friendly web experience.
+        </p>
+      </figure>
+      <button>Check My Work</button>
+    </section>
 
-    <body id="homepage">
-        <nav class="navigation">
-            <a href="index.html" class="navigation__logo">williewhitfield</a>
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="" class="navigation__link">Home</a></li>
-                <li class="navigation__item"><a href="pages/bio.html" class="navigation__link">Bio</a></li>
-                <li class="navigation__item"><a href="pages/portfolio.html" class="navigation__link">Portfolio</a></li>
-                <li class="navigation__item"><a href="#footer" class="navigation__link">Contact</a></li>
-            </ul>
-        </nav>
-
-        <header class="header">
-                <h1 class="heading-1">
-                    A strong brand speaks volumes<br>A strong site <span class="heading-1--strong">amplifies</span> it
-                </h1>
-        </header>
-
-
-        <main class="main--homepage">
-            <section class="features">
-                <div class="feature feature--1">
-                    <svg class="feature__icon">
-                        <use href="img/sprite.svg#icon-code"></use>
-                    </svg>
-                    <h3 class="heading-3">Hand-Coded Websites</h3>
-                    <p class="paragraph">No cookie cutter websites here. Each project is hand written to ensure that your site is well-formatted, easily readable, and fast loading.</p>
-                </div>
-                <div class="feature feature--2">
-                    <svg class="feature__icon">
-                        <use href="img/sprite.svg#icon-devices"></use>
-                    </svg>
-                    <h3 class="heading-3">Responsive Design</h3>
-                    <p class="paragraph">Web content flows freely across all screen resolutions giving your visitors the same user-friendly experience no matter what device they're using.</p>
-                </div>
-                <div class="feature feature--3">
-                    <svg class="feature__icon">
-                        <use href="img/sprite.svg#icon-design"></use>
-                    </svg>
-                    <h3 class="heading-3">Convert Design Into Code</h3>
-                    <p class="paragraph">Transform static designs into pixel-perfect HTML5/CSS3 with cross-broswer compatibility. Code is validated to meet W3C standards.</p>
-                </div>
-                <a href="pages/portfolio.html" class="btn">View my portfolio</a>
-            </section>
-
-            <section class="about">
-                    <h2 class="heading-2">More than a developer</h2>
-                    <figure class="about__photo">
-                        <img src="img/profile.jpg" alt="Willie Whitfield profile">
-                    </figure>
-                    <div class="about__content">
-                        <p class="paragraph">My name is Willie Whitfield and I am a front-end web developer based in Fort Lauderdale, Florida. I am passionate about designing and developing rich, user-friendly web experiences.</p>
-                        <p class="paragraph">I have been a coding/graphic design hobbyist for several years, but recently enrolled in the Skillcrush Coding Academy to polish and further develop my web skills. I focus on creating easy-to-use, responsive web designs with HTML &amp; CSS. </p>
-                    </div>
-                    <a href="pages/bio.html" class="btn">Learn more about me</a>
-            </section>
-        </main>
-
-        <footer class="footer" id="footer">
-            <h2 class="heading-2">Connect with me</h2>
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a href="mailto:hello@williewhitfield.com" class="footer__link">
-                            <svg class="footer__icon">
-                                <use href="img/sprite.svg#icon-email"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="footer__item">
-                        <a href="https://twitter.com/wdw_iii" target="_blank" class="footer__link">
-                            <svg class="footer__icon">
-                                <use href="img/sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="footer__item">
-                        <a href="https://github.com/wdwiii" target="_blank" class="footer__link">
-                            <svg class="footer__icon">
-                                <use href="img/sprite.svg#icon-github"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="footer__item">
-                        <a href="https://www.linkedin.com/in/wdwiii/" target="_blank" class="footer__link">
-                            <svg class="footer__icon">
-                                <use href="img/sprite.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="footer__item">
-                        <a href="https://app.slack.com/client/T9A5T142J/D0198NZJV8U/user_profile/U019F6H761X" target="_blank" class="footer__link">
-                            <svg class="footer__icon">
-                                <use href="img/sprite.svg#icon-slack"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <a href="https://www.williewhitfield.com" class="attribution">Site designed and created by Willie Whitfield</a>
-        </footer>
-    </body>
+    <section class="skills-section">
+      <h2 class="heading-3">Languages & Skills</h2>
+      <svg class="skill-icon">
+        <use href="icons/sprite.svg#icon-html"></use>
+      </svg>
+      <svg class="skill-icon">
+        <use href="icons/sprite.svg#icon-css"></use>
+      </svg>
+      <svg class="skill-icon">
+        <use href="icons/sprite.svg#icon-sass"></use>
+      </svg>
+      <svg class="skill-icon">
+        <use href="icons/sprite.svg#icon-javascript"></use>
+      </svg>
+      <svg class="skill-icon">
+        <use href="icons/sprite.svg#icon-react"></use>
+      </svg>
+      <svg class="skill-icon">
+        <use href="icons/sprite.svg#icon-photoshop"></use>
+      </svg>
+      <svg class="skill-icon">
+        <use href="icons/sprite.svg#icon-git"></use>
+      </svg>
+      <svg class="skill-icon">
+        <use href="icons/sprite.svg#icon-github"></use>
+      </svg>
+      <svg class="skill-icon">
+        <use href="icons/sprite.svg#icon-vscode"></use>
+      </svg>
+    </section>
+    <section class="about-section">
+      <h2 class="heading-2">Meet Your Developer</h2>
+      <div class="about__text">
+        <p class="paragraph">
+          I am a front-end web developer based in Fort Lauderdale, Florida. I am
+          passionate about designing and developing rich, user-friendly web
+          experiences.
+        </p>
+        <p class="paragraph">
+          I graduated from Barry University where I was a four-year scholarship
+          athlete and Physical Education B.S. recipient. I was fortunate enough
+          to travel the globe playing professional basketball in Mainz, Germany
+          and alongside the World Famous Harlem Globetrotters.
+        </p>
+        <p class="paragraph">
+          What I value most from my journey are the relationships that I have
+          developed over the years. The people that have come into my life have
+          helped unlock my mind and heart, enabling me to take more pride in
+          becoming a better human. I currently teach Special Education and coach
+          high school basketball, where the focus is to bridge gaps between
+          educational barriers and success & equip future leaders with tools to
+          create change.
+        </p>
+        <p class="paragraph">
+          My experiences as a professional basketball player, high school
+          basketball coach and special education teacher translates to web
+          development. As developer, I value the working relationship with my
+          clients, not just the business. The ability to collaborate,
+          communicate clearly, and problem-solve are foundational skills that
+          will be utilized to ensure that you don’t just receive a website that
+          is made for you, but made with you in mind.
+        </p>
+        <button>Read More</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <img
+        src="img/ww-logo-secondary.svg"
+        alt="Willie Whitfield Web Development"
+        class="footer__logo"
+      />
+      <h2 class="footer__tagline">Learn. Create. Deliver.</h2>
+      <nav class="footer__nav">
+        <svg class="skill-icon">
+          <use href="icons/sprite.svg#icon-linkedin"></use>
+        </svg>
+        <svg class="skill-icon">
+          <use href="icons/sprite.svg#icon-github-alt"></use>
+        </svg>
+        <svg class="skill-icon">
+          <use href="icons/sprite.svg#icon-twitter"></use>
+        </svg>
+        <svg class="skill-icon">
+          <use href="icons/sprite.svg#icon-slack"></use>
+        </svg>
+        <svg class="skill-icon">
+          <use href="icons/sprite.svg#icon-instagram"></use>
+        </svg>
+        <svg class="skill-icon">
+          <use href="icons/sprite.svg#icon-envelope"></use>
+        </svg>
+      </nav>
+      <span class="footer__attribution"
+        >Designed and Created by WIllie Whitfield</span
+      >
+    </footer>
+  </body>
 </html>
