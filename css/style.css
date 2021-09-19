@@ -1,0 +1,90 @@
+:root {
+  /*====================
+          Colors
+  ====================*/
+  --color-black: #2b2b2b;
+  --color-white: #fff;
+  --color-gray: #6d6d6d;
+  --color-primary: #6be4d3;
+  /*====================
+          Fonts
+  ====================*/
+  --font-display: "Teko", sans-serif;
+  --font-standard: "Roboto", sans-serif;
+  --font-size-sm: 1rem;
+  --font-size-med: 1.6rem;
+  --font-size-lrg: 2.4rem;
+  --font-size-xlrg: 3.2rem;
+  --font-size-2xlrg: 4.8rem;
+  --font-size-default: 1.6rem;
+  /*====================
+      Utility Clases
+  ====================*/
+}
+:root .hide {
+  display: none;
+}
+:root .flex {
+  display: flex;
+}
+:root .grid {
+  display: grid;
+}
+
+/*====================
+        Base Styles
+====================*/
+body {
+  display: grid;
+}
+
+/*======================
+      Typyography
+=======================*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-black);
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4 {
+  font-family: var(--font-display);
+}
+
+.heading-2 {
+  font-size: var(--font-size-xlrg);
+}
+
+.heading-3 {
+  font-size: var(--font-size-xlrg);
+}
+
+.heading-4 {
+  font-size: var(--font-size-lrg);
+}
+
+.paragraph {
+  font-family: var(--font-standard);
+  font-size: var(--font-size-med);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.header__logo {
+  width: 12rem;
+}
+.header .hero {
+  flex-basis: 100%;
+}
+
+.navigation {
+  display: flex;
+}

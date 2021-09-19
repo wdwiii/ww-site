@@ -1,20 +1,13 @@
-h1 {
-  color: aquamarine;
-  background-color: bisque;
-}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-p {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: larger;
-}
+  &__logo {
+    width: 12rem;
+  }
 
-body {
-  padding: 5rem;
+  .hero {
+    flex-basis: 100%;
+  }
 }
-
-.wassup {
-  margin: 50px;
-}
-
-/*New Styles*/
-//Yooooo

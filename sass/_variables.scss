@@ -1,0 +1,37 @@
+:root {
+  /*====================
+        Colors
+====================*/
+  --color-black: #2b2b2b;
+  --color-white: #fff;
+  --color-gray: #6d6d6d;
+  --color-primary: #6be4d3;
+
+  /*====================
+        Fonts
+====================*/
+  --font-display: 'Teko', sans-serif;
+  --font-standard: 'Roboto', sans-serif;
+
+  --font-size-sm: 1rem;
+  --font-size-med: 1.6rem;
+  --font-size-lrg: 2.4rem;
+  --font-size-xlrg: 3.2rem;
+  --font-size-2xlrg: 4.8rem;
+  --font-size-default: 1.6rem;
+
+  /*====================
+    Utility Clases
+====================*/
+  .hide {
+    display: none;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .grid {
+    display: grid;
+  }
+}
