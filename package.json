@@ -1,26 +1,21 @@
 {
   "name": "WillieWhitfield.com",
   "version": "1.0.0",
-  "description": "Willie Whitfield Portfolio Webpage",
+  "description": "Willie Whitfield Web Development Site",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/main.css -w",
-    "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass",
-
-    "compile:sass": "node-sass sass/main.scss css/main.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/main.comp.css -o css/main.prefix.css",
-    "compress:css": "node-sass css/main.prefix.css css/main.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Willie Whitfield",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "concat": "^1.0.3",
-    "node-sass": "^5.0.0",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.3.0",
-    "postcss-cli": "^8.3.1"
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-purgecss": "^4.0.3",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.41.1"
   }
 }

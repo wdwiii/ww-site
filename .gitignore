@@ -5,12 +5,7 @@ node_modules/
 package-lock.json
 .prettierrc
 .gitignore
-img/ww-logo.pxd/data/
-img/ww-logo.pxd/QuickLook/Thumbnail.tiff
-img/ww-logo.pxd/QuickLook/Icon.tiff
-img/ww-logo-alt-2.pxd/QuickLook/
-img/ww-logo.pxd/metadata.info
-img/ww-logo-alt-2.pxd/data/
-img/ww-logo-alt-2.pxd/metadata.info
+img/ww-logo.pxd/
+img/ww-logo-alt-2.pxd/
 originalImportedContentDocumentInfo
 Thumbnail.tiff
