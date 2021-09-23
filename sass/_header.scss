@@ -8,6 +8,14 @@
   }
 
   .hero {
+    background-image: linear-gradient(rgb(61, 61, 61), transparent 40%),
+      url('../img/hero.jpg');
+    background-size: cover;
+    display: flex;
     flex-basis: 100%;
+    min-height: 50rem;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }

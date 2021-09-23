@@ -14,9 +14,11 @@ body {
 .heading-3,
 .heading-4 {
   font-family: var(--font-display);
+  text-align: center;
 }
 
 .heading-2 {
+  color: var(--color-white);
   font-size: var(--font-size-xlrg);
 }
 
@@ -26,9 +28,11 @@ body {
 
 .heading-4 {
   font-size: var(--font-size-lrg);
+  margin: 0;
 }
 
 .paragraph {
   font-family: var(--font-standard);
   font-size: var(--font-size-med);
+  margin-block: 1rem;
 }

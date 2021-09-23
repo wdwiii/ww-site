@@ -1,0 +1,34 @@
+/*======================
+      Skills Section
+=======================*/
+
+.skills-section {
+  align-items: center;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+.skills__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  grid-template-rows: repeat(3, min-content);
+  grid-gap: 4rem;
+  justify-content: center;
+}
+
+.skill {
+  margin: 0;
+
+  &__title {
+    color: var(--color-black);
+    text-align: center;
+    font-weight: var(--font-weight-bold);
+  }
+
+  &__icon {
+    fill: var(--color-white);
+    height: 6.5rem;
+    width: 6.5rem;
+  }
+}
