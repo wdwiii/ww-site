@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Teko:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Teko:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -36,12 +36,15 @@
           <br />
           A strong site <em>amplifies</em> it.
         </h1>
-        <button>Let's Connect</button>
+        <button class="btn btn--transparent">Let's Connect</button>
       </div>
     </header>
 
     <section class="features-section">
       <figure class="feature">
+        <svg class="feature__icon">
+          <use href="icons/sprite.svg#icon-code"></use>
+        </svg>
         <h4 class="heading-4">Hand Coded Webpages</h4>
         <p class="paragraph">
           No cookie cutter websites here. Each project is hand written to ensure
@@ -50,6 +53,9 @@
         </p>
       </figure>
       <figure class="feature">
+        <svg class="feature__icon">
+          <use href="icons/sprite.svg#icon-responsive"></use>
+        </svg>
         <h4 class="heading-4">Responsive Design</h4>
         <p class="paragraph">
           Web content flows freely across all screen resolutions giving your
@@ -58,6 +64,9 @@
         </p>
       </figure>
       <figure class="feature">
+        <svg class="feature__icon">
+          <use href="icons/sprite.svg#icon-design"></use>
+        </svg>
         <h4 class="heading-4">Convert Design Into Code</h4>
         <p class="paragraph">
           Already have a design, great! Transform static designs into beautiful,
@@ -65,38 +74,71 @@
           friendly web experience.
         </p>
       </figure>
-      <button>Check My Work</button>
+      <button class="btn btn--primary">Check My Work</button>
     </section>
 
     <section class="skills-section">
       <h2 class="heading-3">Languages & Skills</h2>
-      <svg class="skill-icon">
-        <use href="icons/sprite.svg#icon-html"></use>
-      </svg>
-      <svg class="skill-icon">
-        <use href="icons/sprite.svg#icon-css"></use>
-      </svg>
-      <svg class="skill-icon">
-        <use href="icons/sprite.svg#icon-sass"></use>
-      </svg>
-      <svg class="skill-icon">
-        <use href="icons/sprite.svg#icon-javascript"></use>
-      </svg>
-      <svg class="skill-icon">
-        <use href="icons/sprite.svg#icon-react"></use>
-      </svg>
-      <svg class="skill-icon">
-        <use href="icons/sprite.svg#icon-photoshop"></use>
-      </svg>
-      <svg class="skill-icon">
-        <use href="icons/sprite.svg#icon-git"></use>
-      </svg>
-      <svg class="skill-icon">
-        <use href="icons/sprite.svg#icon-github"></use>
-      </svg>
-      <svg class="skill-icon">
-        <use href="icons/sprite.svg#icon-vscode"></use>
-      </svg>
+      <div class="skills__wrapper">
+        <figure class="skill">
+          <svg class="skill__icon">
+            <use href="icons/sprite.svg#icon-html"></use>
+          </svg>
+          <p class="paragraph skill__title">HTML</p>
+        </figure>
+        <figure class="skill">
+          <svg class="skill__icon">
+            <use href="icons/sprite.svg#icon-css"></use>
+          </svg>
+          <p class="paragraph skill__title">CSS</p>
+        </figure>
+        
+        <figure class="skill">
+          <svg class="skill__icon">
+            <use href="icons/sprite.svg#icon-sass"></use>
+          </svg>
+          <p class="paragraph skill__title">Sass</p>
+        </figure>
+        
+        <figure class="skill">
+          <svg class="skill__icon">
+            <use href="icons/sprite.svg#icon-javascript"></use>
+          </svg>
+          <p class="paragraph skill__title">JavaScript</p>
+        </figure>
+        <figure class="skill">
+          <svg class="skill__icon">
+            <use href="icons/sprite.svg#icon-react"></use>
+          </svg>
+          <p class="paragraph skill__title">React JS</p>
+        </figure>
+        <figure class="skill">
+          <svg class="skill__icon">
+            <use href="icons/sprite.svg#icon-photoshop"></use>
+          </svg>
+          <p class="paragraph skill__title">Photoshop</p>
+        </figure>
+        
+        <figure class="skill">
+          <svg class="skill__icon">
+            <use href="icons/sprite.svg#icon-git"></use>
+          </svg>
+          <p class="paragraph skill__title">Git</p>
+        </figure>
+        <figure class="skill">
+          <svg class="skill__icon">
+            <use href="icons/sprite.svg#icon-github"></use>
+          </svg>
+          <p class="paragraph skill__title">GitHub</p>
+        </figure>
+        <figure class="skill">
+          <svg class="skill__icon">
+            <use href="icons/sprite.svg#icon-vscode"></use>
+          </svg>
+          <p class="paragraph skill__title">Visual Studio Code</p>
+        </figure>
+      </div>
+      <button class="btn btn--black">View My Resume</button>
     </section>
     <section class="about-section">
       <h2 class="heading-3">Meet Your Developer</h2>
