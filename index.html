@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>WillieWhitfield.com</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Willie Whitfield Web Deveopment</title>
@@ -17,39 +17,45 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="heading-1">
-        <img
-          src="img/ww-logo.svg"
-          alt="Willie Whitfield Web Development"
-          class="header__logo"
-        />
-        <!-- <svg class="skill-icon">
-          <use href="img/ww-logo.svg"></use>
-        </svg> -->
-      </h1>
-      <nav class="navigation">
-        <div class="navigation__icon"></div>
-      </nav>
-      <div class="hero">
-        <h2 class="heading-2">
-          A strong brand speaks volumes.
-          <br />
-          A strong site <em>amplifies</em> it.
-        </h1>
-        <button class="btn btn--transparent">Let's Connect</button>
-      </div>
+      <div class="menu"></div>
+      <img
+        src="img/ww-logo.svg"
+        alt="Willie Whitfield Web Development"
+        class="header__logo"
+      />
+      <button class="btn btn--transparent">Let's Connect</button>
     </header>
 
-    <section class="features-section">
+    <section class="features">
+      <!-- <a href='https://www.freepik.com/vectors/mockup'>Mockup vector created by rawpixel.com - www.freepik.com</a> -->
+      <h2 class="heading-3">What I do...</h2>
+      <figure class="feature">
+        <svg class="feature__icon">
+          <use href="icons/sprite.svg#icon-design"></use>
+        </svg>
+        <h4 class="heading-4">Convert Design Into Code</h4>
+        <p class="paragraph">
+          <!-- Already have a design, great! Transform static designs into beautiful,
+          easy to maintain code that brings give your visitors a rich and
+          friendly web experience. -->
+          Design compositions are converted into pixel perfect web pages with a
+          combination of HTML and CSS. With JavaScript, dynamic features can be
+          added to give the webpage life.
+        </p>
+      </figure>
       <figure class="feature">
         <svg class="feature__icon">
           <use href="icons/sprite.svg#icon-code"></use>
         </svg>
         <h4 class="heading-4">Hand Coded Webpages</h4>
         <p class="paragraph">
-          No cookie cutter websites here. Each project is hand written to ensure
+          <!-- No cookie cutter websites here. Each project is hand written to ensure
           that your code is semantic,fast loading and clear of the 'code bloat'
-          that can negatively impact SEO.
+          that can negatively impact SEO. -->
+          Projects are built from the ground up. leaving behind the heavy cookie
+          cutter templates for lean, fast-loading code. Semanticlly markup
+          allows Search Engines to focus on the content of the page without
+          needing to filter through lines of meaningless 'junk" code.
         </p>
       </figure>
       <figure class="feature">
@@ -58,91 +64,88 @@
         </svg>
         <h4 class="heading-4">Responsive Design</h4>
         <p class="paragraph">
-          Web content flows freely across all screen resolutions giving your
+          <!-- Web content flows freely across all screen resolutions giving your
           visitors the same user-friendly experience no matter what device
-          they're using.
-        </p>
-      </figure>
-      <figure class="feature">
-        <svg class="feature__icon">
-          <use href="icons/sprite.svg#icon-design"></use>
-        </svg>
-        <h4 class="heading-4">Convert Design Into Code</h4>
-        <p class="paragraph">
-          Already have a design, great! Transform static designs into beautiful,
-          easy to maintain code that brings give your visitors a rich and
-          friendly web experience.
+          they're using. -->
+          Avoid the clunkly, hard-to-navigate web designs. Web content flows
+          freely across all screen resolutions giving your visitors the same
+          user-friendly experience no matter what device they're using.
         </p>
       </figure>
       <button class="btn btn--primary">Check My Work</button>
     </section>
 
-    <section class="skills-section">
+    <section class="skills">
       <h2 class="heading-3">Languages & Skills</h2>
       <div class="skills__wrapper">
-        <figure class="skill">
+        <figure class="skill skill--1">
           <svg class="skill__icon">
             <use href="icons/sprite.svg#icon-html"></use>
           </svg>
           <p class="paragraph skill__title">HTML</p>
         </figure>
-        <figure class="skill">
+
+        <figure class="skill skill--2">
           <svg class="skill__icon">
             <use href="icons/sprite.svg#icon-css"></use>
           </svg>
           <p class="paragraph skill__title">CSS</p>
         </figure>
-        
-        <figure class="skill">
+
+        <figure class="skill skill--3">
           <svg class="skill__icon">
             <use href="icons/sprite.svg#icon-sass"></use>
           </svg>
           <p class="paragraph skill__title">Sass</p>
         </figure>
-        
-        <figure class="skill">
+
+        <figure class="skill skill--4">
           <svg class="skill__icon">
             <use href="icons/sprite.svg#icon-javascript"></use>
           </svg>
           <p class="paragraph skill__title">JavaScript</p>
         </figure>
-        <figure class="skill">
+
+        <figure class="skill skill--5">
           <svg class="skill__icon">
             <use href="icons/sprite.svg#icon-react"></use>
           </svg>
           <p class="paragraph skill__title">React JS</p>
         </figure>
-        <figure class="skill">
+
+        <figure class="skill skill--6">
           <svg class="skill__icon">
             <use href="icons/sprite.svg#icon-photoshop"></use>
           </svg>
           <p class="paragraph skill__title">Photoshop</p>
         </figure>
-        
-        <figure class="skill">
+
+        <figure class="skill skill--7">
           <svg class="skill__icon">
             <use href="icons/sprite.svg#icon-git"></use>
           </svg>
           <p class="paragraph skill__title">Git</p>
         </figure>
-        <figure class="skill">
+
+        <figure class="skill skill--8">
           <svg class="skill__icon">
             <use href="icons/sprite.svg#icon-github"></use>
           </svg>
           <p class="paragraph skill__title">GitHub</p>
         </figure>
-        <figure class="skill">
+
+        <figure class="skill skill--9">
           <svg class="skill__icon">
             <use href="icons/sprite.svg#icon-vscode"></use>
           </svg>
-          <p class="paragraph skill__title">Visual Studio Code</p>
+          <p class="paragraph skill__title">VSCode</p>
         </figure>
       </div>
-      <button class="btn btn--black">View My Resume</button>
+      <button class="btn btn--gray">View My Resume</button>
     </section>
-    <section class="about-section">
+    <section class="about">
       <h2 class="heading-3">Meet Your Developer</h2>
-      <div class="about__text">
+      <div class="about__content">
         <p class="paragraph">
           I am a front-end web developer based in Fort Lauderdale, Florida. I am
           passionate about designing and developing rich, user-friendly web
@@ -172,7 +175,7 @@
           will be utilized to ensure that you don’t just receive a website that
           is made for you, but made with you in mind.
         </p>
-        <button>Read More</button>
+        <button class="btn--read-more">Read More</button>
       </div>
     </section>
     <footer class="footer">
@@ -183,22 +186,22 @@
       />
       <h2 class="footer__tagline">Learn. Create. Deliver.</h2>
       <nav class="footer__nav">
-        <svg class="skill-icon">
+        <svg class="footer-icon">
           <use href="icons/sprite.svg#icon-linkedin"></use>
         </svg>
-        <svg class="skill-icon">
+        <svg class="footer__icon">
           <use href="icons/sprite.svg#icon-github-alt"></use>
         </svg>
-        <svg class="skill-icon">
+        <svg class="footer__icon">
           <use href="icons/sprite.svg#icon-twitter"></use>
         </svg>
-        <svg class="skill-icon">
+        <svg class="footer__icon">
           <use href="icons/sprite.svg#icon-slack"></use>
         </svg>
-        <svg class="skill-icon">
+        <svg class="footer__icon">
           <use href="icons/sprite.svg#icon-instagram"></use>
         </svg>
-        <svg class="skill-icon">
+        <svg class="footer__icon">
           <use href="icons/sprite.svg#icon-envelope"></use>
         </svg>
       </nav>
