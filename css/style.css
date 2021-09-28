@@ -11,7 +11,7 @@
   ====================*/
   --font-display: "Teko", sans-serif;
   --font-standard: "Roboto", sans-serif;
-  --font-size-sm: 1rem;
+  --font-size-sm: 1.2rem;
   --font-size-med: 1.6rem;
   --font-size-lrg: 2.8rem;
   --font-size-xlrg: 3.8rem;
@@ -304,11 +304,50 @@ body {
 }
 
 .footer {
+  align-items: center;
   background-color: var(--color-primary);
+  color: var(--color-black);
   display: flex;
   flex-direction: column;
-  justify-content: fr4;
+  padding-block: 3rem;
+}
+.footer *:not(.footer__icon, .footer__attribution) {
+  margin-bottom: 1.75rem;
 }
 .footer__logo {
-  width: 10rem;
+  width: 7.5rem;
+}
+.footer__tagline, .footer__quote,
+.footer .name {
+  font-family: var(--font-display);
+}
+.footer__tagline {
+  font-size: var(--font-size-xlrg);
+}
+.footer__quote {
+  color: var(--color-white);
+  font-size: var(--font-size-lrg);
+  text-align: center;
+}
+.footer__nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 37.5rem;
+  width: 90%;
+}
+.footer__icon {
+  border: 3px solid var(--color-gray);
+  border-radius: 50%;
+  fill: var(--color-white);
+  height: 2.5rem;
+  padding: 0.75rem;
+  width: 2.5rem;
+}
+.footer__attribution {
+  font-family: var(--font-standard);
+  font-size: var(--font-size-sm);
+}
+.footer .name {
+  font-size: var(--font-size-med);
 }

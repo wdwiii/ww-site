@@ -1,10 +1,58 @@
 .footer {
+  align-items: center;
   background-color: var(--color-primary);
+  color: var(--color-black);
   display: flex;
   flex-direction: column;
-  justify-content: fr4;
+  padding-block: 3rem;
+
+  *:not(.footer__icon, .footer__attribution) {
+    margin-bottom: 1.75rem;
+  }
 
   &__logo {
-    width: 10rem;
+    width: 7.5rem;
+  }
+
+  &__tagline,
+  &__quote,
+  .name {
+    font-family: var(--font-display);
+  }
+
+  &__tagline {
+    font-size: var(--font-size-xlrg);
+  }
+
+  &__quote {
+    color: var(--color-white);
+    font-size: var(--font-size-lrg);
+    text-align: center;
+  }
+
+  &__nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 37.5rem;
+    width: 90%;
+  }
+
+  &__icon {
+    border: 3px solid var(--color-gray);
+    border-radius: 50%;
+    fill: var(--color-white);
+    height: 2.5rem;
+    padding: 0.75rem;
+    width: 2.5rem;
+  }
+
+  &__attribution {
+    font-family: var(--font-standard);
+    font-size: var(--font-size-sm);
+  }
+
+  .name {
+    font-size: var(--font-size-med);
   }
 }
