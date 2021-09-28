@@ -1,21 +1,31 @@
 .header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  background-image: linear-gradient(
+      rgb(235, 253, 251),
+      rgb(0, 255, 221, 0.35) 70%
+    ),
+    url('../img/hero.jpg');
+  background-position: top left 45%;
+  background-size: cover;
+  height: 100vh;
 
   &__logo {
-    width: 12rem;
+    justify-self: center;
+    margin-top: 5rem;
+    width: 30rem;
   }
 
   .hero {
-    background-image: linear-gradient(rgb(61, 61, 61), transparent 40%),
-      url('../img/hero.jpg');
     background-size: cover;
     display: flex;
-    flex-basis: 100%;
-    min-height: 50rem;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 90%;
+    }
   }
 }

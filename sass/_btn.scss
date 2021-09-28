@@ -1,26 +1,59 @@
 .btn {
+  align-self: end;
   border: 2px solid;
   border-radius: 1rem;
+  box-shadow: var(--box-shadow-gray);
   color: var(--color-white);
   font-family: var(--font-display);
   font-size: var(--font-size-lrg);
+  justify-self: center;
   outline: none;
-  padding: 1rem 2rem;
+  padding: 0.75rem 3rem;
+  margin-block: 3.5rem;
 
   &--primary {
     background-color: var(--color-primary);
     border-color: var(--color-black);
-    box-shadow: 0.5rem 0.5rem 1.25rem var(--color-gray);
   }
 
   &--black {
     background-color: var(--color-black);
     border-color: var(--color-white);
-    box-shadow: 0.5rem 0.5rem 1.25rem var(--color-gray);
+  }
+
+  &--gray {
+    background-color: var(--color-gray);
+    border-color: var(--color-black);
   }
 
   &--transparent {
     background-color: transparent;
     border-color: var(--color-white);
+    border-width: 4px;
+    box-shadow: none;
+  }
+
+  &--read-more {
+    background-color: transparent;
+    border: none;
+    color: var(--color-primary);
+    font-family: var(--font-display);
+    font-size: 2rem;
+    grid-column: col-start 1 / span 2;
+    position: relative;
+    width: max-content;
+
+    &::after {
+      content: '';
+      background-color: var(--color-primary);
+      clip-path: polygon(0 100%, 50% 0, 100% 100%);
+      display: inline-block;
+      height: 0.75rem;
+      margin-left: 5px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0.75rem;
+    }
   }
 }

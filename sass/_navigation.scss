@@ -1,3 +1,35 @@
 .navigation {
   display: flex;
 }
+
+.menu::before,
+.menu::after,
+.menu {
+  background-color: var(--color-black);
+  border-radius: 5px;
+}
+
+.menu {
+  height: 4px;
+  width: 3rem;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+}
+
+.menu::before,
+.menu::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.menu::before {
+  top: 1rem;
+}
+
+.menu::after {
+  top: 2rem;
+}

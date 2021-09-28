@@ -2,23 +2,28 @@
       Skills Section
 =======================*/
 
-.skills-section {
-  align-items: center;
+.skills {
   background-color: var(--color-primary);
-  display: flex;
-  flex-direction: column;
+  grid-row-gap: 3rem;
 }
 
 .skills__wrapper {
   display: grid;
-  grid-template-columns: repeat(3, min-content);
-  grid-template-rows: repeat(3, min-content);
-  grid-gap: 4rem;
-  justify-content: center;
+  grid-column: col-start 1 / col-end 4;
+  grid-gap: 2rem;
+  grid-template-areas:
+    'skill1 skill2 skill3'
+    'skill4 skill5 skill6'
+    'skill7 skill8 skill9';
+
+  justify-items: center;
 }
 
 .skill {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min-content;
 
   &__title {
     color: var(--color-black);
@@ -30,5 +35,33 @@
     fill: var(--color-white);
     height: 6.5rem;
     width: 6.5rem;
+  }
+
+  &--1 {
+    grid-area: skill1;
+  }
+  &--2 {
+    grid-area: skill2;
+  }
+  &--3 {
+    grid-area: skill3;
+  }
+  &--4 {
+    grid-area: skill4;
+  }
+  &--5 {
+    grid-area: skill5;
+  }
+  &--6 {
+    grid-area: skill6;
+  }
+  &--7 {
+    grid-area: skill7;
+  }
+  &--8 {
+    grid-area: skill8;
+  }
+  &--9 {
+    grid-area: skill9;
   }
 }

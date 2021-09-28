@@ -1,0 +1,10 @@
+.footer {
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: fr4;
+
+  &__logo {
+    width: 10rem;
+  }
+}

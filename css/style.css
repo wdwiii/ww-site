@@ -13,13 +13,14 @@
   --font-standard: "Roboto", sans-serif;
   --font-size-sm: 1rem;
   --font-size-med: 1.6rem;
-  --font-size-lrg: 2.4rem;
-  --font-size-xlrg: 3.2rem;
-  --font-size-2xlrg: 4.8rem;
+  --font-size-lrg: 2.8rem;
+  --font-size-xlrg: 3.8rem;
+  --font-size-2xlrg: 5rem;
   --font-size-default: 1.6rem;
   --font-weight-thin: 100;
   --font-weight-light: 300;
   --font-weight-bold: 500;
+  --box-shadow-gray: 0.5rem 0.5rem 1.25rem var(--color-gray);
   /*====================
       Utility Clases
   ====================*/
@@ -35,14 +36,24 @@
 }
 
 /*====================
-        Base Styles
+         Layout
 ====================*/
-body {
+body,
+.header,
+.features,
+.skills,
+.about {
   display: grid;
+  grid-template-columns: [full-start] 1px repeat(4, [col-start] 1fr [col-end]) 1px [full-end];
+  grid-column-gap: 16px;
+}
+
+body * {
+  grid-column: full-start/full-end;
 }
 
 section {
-  padding-block: 5rem;
+  padding-block: 2.5rem;
 }
 
 /*======================
@@ -81,60 +92,128 @@ body {
 .paragraph {
   font-family: var(--font-standard);
   font-size: var(--font-size-med);
+  line-height: 2rem;
   margin-block: 1rem;
 }
 
 .btn {
+  align-self: end;
   border: 2px solid;
   border-radius: 1rem;
+  box-shadow: var(--box-shadow-gray);
   color: var(--color-white);
   font-family: var(--font-display);
   font-size: var(--font-size-lrg);
+  justify-self: center;
   outline: none;
-  padding: 1rem 2rem;
+  padding: 0.75rem 3rem;
+  margin-block: 3.5rem;
 }
 .btn--primary {
   background-color: var(--color-primary);
   border-color: var(--color-black);
-  box-shadow: 0.5rem 0.5rem 1.25rem var(--color-gray);
 }
 .btn--black {
   background-color: var(--color-black);
   border-color: var(--color-white);
-  box-shadow: 0.5rem 0.5rem 1.25rem var(--color-gray);
+}
+.btn--gray {
+  background-color: var(--color-gray);
+  border-color: var(--color-black);
 }
 .btn--transparent {
   background-color: transparent;
   border-color: var(--color-white);
+  border-width: 4px;
+  box-shadow: none;
+}
+.btn--read-more {
+  background-color: transparent;
+  border: none;
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-size: 2rem;
+  grid-column: col-start 1/span 2;
+  position: relative;
+  width: max-content;
+}
+.btn--read-more::after {
+  content: "";
+  background-color: var(--color-primary);
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+  display: inline-block;
+  height: 0.75rem;
+  margin-left: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.75rem;
 }
 
 .header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  background-image: linear-gradient(#ebfdfb, rgba(0, 255, 221, 0.35) 70%), url("../img/hero.jpg");
+  background-position: top left 45%;
+  background-size: cover;
+  height: 100vh;
 }
 .header__logo {
-  width: 12rem;
+  justify-self: center;
+  margin-top: 5rem;
+  width: 30rem;
 }
 .header .hero {
-  background-image: linear-gradient(#3d3d3d, transparent 40%), url("../img/hero.jpg");
   background-size: cover;
   display: flex;
-  flex-basis: 100%;
-  min-height: 50rem;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+}
+.header .hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 90%;
 }
 
 .navigation {
   display: flex;
 }
 
-.features-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.menu::before,
+.menu::after,
+.menu {
+  background-color: var(--color-black);
+  border-radius: 5px;
+}
+
+.menu {
+  height: 4px;
+  width: 3rem;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+}
+
+.menu::before,
+.menu::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.menu::before {
+  top: 1rem;
+}
+
+.menu::after {
+  top: 2rem;
+}
+
+.features {
+  grid-row-gap: 2rem;
+  justify-items: center;
 }
 
 .feature {
@@ -142,6 +221,9 @@ body {
   color: var(--color-gray);
   display: flex;
   flex-direction: column;
+  grid-column: col-start 1/col-end 4;
+  max-width: 30rem;
+  text-align: center;
 }
 .feature__icon {
   fill: var(--color-primary);
@@ -152,23 +234,24 @@ body {
 /*======================
       Skills Section
 =======================*/
-.skills-section {
-  align-items: center;
+.skills {
   background-color: var(--color-primary);
-  display: flex;
-  flex-direction: column;
+  grid-row-gap: 3rem;
 }
 
 .skills__wrapper {
   display: grid;
-  grid-template-columns: repeat(3, min-content);
-  grid-template-rows: repeat(3, min-content);
-  grid-gap: 4rem;
-  justify-content: center;
+  grid-column: col-start 1/col-end 4;
+  grid-gap: 2rem;
+  grid-template-areas: "skill1 skill2 skill3" "skill4 skill5 skill6" "skill7 skill8 skill9";
+  justify-items: center;
 }
 
 .skill {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min-content;
 }
 .skill__title {
   color: var(--color-black);
@@ -179,4 +262,53 @@ body {
   fill: var(--color-white);
   height: 6.5rem;
   width: 6.5rem;
+}
+.skill--1 {
+  grid-area: skill1;
+}
+.skill--2 {
+  grid-area: skill2;
+}
+.skill--3 {
+  grid-area: skill3;
+}
+.skill--4 {
+  grid-area: skill4;
+}
+.skill--5 {
+  grid-area: skill5;
+}
+.skill--6 {
+  grid-area: skill6;
+}
+.skill--7 {
+  grid-area: skill7;
+}
+.skill--8 {
+  grid-area: skill8;
+}
+.skill--9 {
+  grid-area: skill9;
+}
+
+.about {
+  background-color: var(--color-black);
+  background-image: url("../img/profile-styled.png");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--color-white);
+}
+.about__content {
+  grid-column: col-start 1/col-end 4;
+}
+
+.footer {
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: fr4;
+}
+.footer__logo {
+  width: 10rem;
 }

@@ -1,0 +1,12 @@
+.about {
+  background-color: var(--color-black);
+  background-image: url('../img/profile-styled.png');
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--color-white);
+
+  &__content {
+    grid-column: col-start 1 / col-end 4;
+  }
+}
