@@ -1,3 +1,14 @@
+/*====================
+    Breakpoint SIzes
+====================*/
+
+$bp-tablet-sm: 37.5em;
+$bp-tablet-lrg: 56.5em;
+
+$bp-laptop: 77.5em;
+
+$bp-desktop: 90em;
+
 :root {
   /*====================
         Colors
@@ -14,7 +25,7 @@
   --font-standard: 'Roboto', sans-serif;
 
   --font-size-sm: 1.2rem;
-  --font-size-med: 1.6rem;
+  --font-size-med: 1.8rem;
   --font-size-lrg: 2.8rem;
   --font-size-xlrg: 3.8rem;
   --font-size-2xlrg: 5rem;

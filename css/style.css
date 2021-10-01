@@ -1,3 +1,6 @@
+/*====================
+    Breakpoint SIzes
+====================*/
 :root {
   /*====================
           Colors
@@ -12,7 +15,7 @@
   --font-display: "Teko", sans-serif;
   --font-standard: "Roboto", sans-serif;
   --font-size-sm: 1.2rem;
-  --font-size-med: 1.6rem;
+  --font-size-med: 1.8rem;
   --font-size-lrg: 2.8rem;
   --font-size-xlrg: 3.8rem;
   --font-size-2xlrg: 5rem;
@@ -38,22 +41,26 @@
 /*====================
          Layout
 ====================*/
-body,
-.header,
-.features,
-.skills,
-.about {
+.grid {
   display: grid;
   grid-template-columns: [full-start] 1px repeat(4, [col-start] 1fr [col-end]) 1px [full-end];
   grid-column-gap: 16px;
 }
+@media only screen and (min-width: 37.5em) {
+  .grid {
+    grid-template-columns: [full-start] 1px repeat(8, [col-start] 1fr [col-end]) 1px [full-end];
+    grid-column-gap: 32px;
+  }
+}
 
-body * {
-  grid-column: full-start/full-end;
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 section {
-  padding-block: 2.5rem;
+  padding-block: 5rem;
 }
 
 /*======================
@@ -71,6 +78,7 @@ body {
 .heading-2,
 .heading-3,
 .heading-4 {
+  grid-column: full-start/full-end;
   font-family: var(--font-display);
   text-align: center;
 }
@@ -92,34 +100,35 @@ body {
 .paragraph {
   font-family: var(--font-standard);
   font-size: var(--font-size-med);
-  line-height: 2rem;
+  line-height: 2.4rem;
   margin-block: 1rem;
 }
 
 .btn {
-  align-self: end;
-  border: 2px solid;
+  background-color: transparent;
+  border: 4px solid;
   border-radius: 1rem;
-  box-shadow: var(--box-shadow-gray);
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
   color: var(--color-white);
   font-family: var(--font-display);
   font-size: var(--font-size-lrg);
+  grid-column: full-start/full-end;
   justify-self: center;
   outline: none;
   padding: 0.75rem 3rem;
-  margin-block: 3.5rem;
 }
 .btn--primary {
-  background-color: var(--color-primary);
-  border-color: var(--color-black);
+  background-color: transparent;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 .btn--black {
-  background-color: var(--color-black);
-  border-color: var(--color-white);
+  color: var(--color-black);
+  border-color: var(--color-black);
 }
 .btn--gray {
-  background-color: var(--color-gray);
-  border-color: var(--color-black);
+  color: var(--color-gray);
+  border-color: var(--color-gray);
 }
 .btn--transparent {
   background-color: transparent;
@@ -151,12 +160,13 @@ body {
 }
 
 .header {
-  background-image: linear-gradient(#ebfdfb, rgba(0, 255, 221, 0.35) 70%), url("../img/hero.jpg");
+  background-image: linear-gradient(#ebfdfb 35%, rgba(0, 255, 221, 0.35) 70%), url("../img/hero.jpg");
   background-position: top left 45%;
   background-size: cover;
-  height: 100vh;
+  height: 75rem;
 }
 .header__logo {
+  grid-column: full-start/full-end;
   justify-self: center;
   margin-top: 5rem;
   width: 30rem;
@@ -173,6 +183,9 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 90%;
+}
+.header .btn {
+  align-self: center;
 }
 
 .navigation {
@@ -236,7 +249,6 @@ body {
 =======================*/
 .skills {
   background-color: var(--color-primary);
-  grid-row-gap: 3rem;
 }
 
 .skills__wrapper {
@@ -245,6 +257,7 @@ body {
   grid-gap: 2rem;
   grid-template-areas: "skill1 skill2 skill3" "skill4 skill5 skill6" "skill7 skill8 skill9";
   justify-items: center;
+  padding-block: 3rem;
 }
 
 .skill {
@@ -260,8 +273,8 @@ body {
 }
 .skill__icon {
   fill: var(--color-white);
-  height: 6.5rem;
-  width: 6.5rem;
+  height: 6rem;
+  width: 6rem;
 }
 .skill--1 {
   grid-area: skill1;

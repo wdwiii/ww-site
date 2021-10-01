@@ -13,6 +13,7 @@ body {
 .heading-2,
 .heading-3,
 .heading-4 {
+  grid-column: full-start / full-end;
   font-family: var(--font-display);
   text-align: center;
 }
@@ -34,6 +35,6 @@ body {
 .paragraph {
   font-family: var(--font-standard);
   font-size: var(--font-size-med);
-  line-height: 2rem;
+  line-height: 2.4rem;
   margin-block: 1rem;
 }

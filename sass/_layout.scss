@@ -1,24 +1,27 @@
 /*====================
          Layout
 ====================*/
-body,
-.header,
-.features,
-.skills,
-.about {
+.grid {
   display: grid;
   grid-template-columns:
     [full-start] 1px repeat(4, [col-start] 1fr [col-end])
     1px [full-end];
   grid-column-gap: 16px;
-}
 
-body {
-  & * {
-    grid-column: full-start / full-end;
+  @media only screen and (min-width: 37.5em) {
+    grid-template-columns:
+      [full-start] 1px repeat(8, [col-start] 1fr [col-end])
+      1px [full-end];
+    grid-column-gap: 32px;
   }
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 section {
-  padding-block: 2.5rem;
+  padding-block: 5rem;
 }

@@ -1,14 +1,15 @@
 .header {
   background-image: linear-gradient(
-      rgb(235, 253, 251),
+      rgb(235, 253, 251) 35%,
       rgb(0, 255, 221, 0.35) 70%
     ),
     url('../img/hero.jpg');
   background-position: top left 45%;
   background-size: cover;
-  height: 100vh;
+  height: 75rem;
 
   &__logo {
+    grid-column: full-start / full-end;
     justify-self: center;
     margin-top: 5rem;
     width: 30rem;
@@ -27,5 +28,8 @@
       justify-content: space-between;
       height: 90%;
     }
+  }
+  .btn {
+    align-self: center;
   }
 }
