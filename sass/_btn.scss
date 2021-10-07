@@ -13,22 +13,26 @@
   padding: 0.75rem 3rem;
 
   &--primary {
+    @extend .btn;
     background-color: transparent; //var(--color-primary);
     border-color: var(--color-primary);
     color: var(--color-primary);
   }
 
   &--black {
+    @extend .btn;
     color: var(--color-black);
     border-color: var(--color-black);
   }
 
   &--gray {
+    @extend .btn;
     color: var(--color-gray);
     border-color: var(--color-gray);
   }
 
   &--transparent {
+    @extend .btn;
     background-color: transparent;
     border-color: var(--color-white);
     border-width: 4px;
