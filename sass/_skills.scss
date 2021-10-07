@@ -1,29 +1,70 @@
+@use 'mixins' as *;
 /*======================
       Skills Section
 =======================*/
-
 .skills {
+  align-items: center;
   background-color: var(--color-primary);
+  flex-direction: column;
+
+  &__heading {
+    flex-basis: 100%;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 60rem;
+    padding-block: 3rem;
+  }
+
+  &__wrapper {
+    align-items: center;
+    justify-self: center;
+    display: grid;
+    grid-column: col-start 1 / col-end 4;
+    grid-gap: 2rem;
+    grid-template-areas:
+      'skill1 skill2 skill3'
+      'skill4 skill5 skill6'
+      'skill7 skill8 skill9';
+    justify-items: center;
+  }
 }
 
-.skills__wrapper {
-  display: grid;
-  grid-column: col-start 1 / col-end 4;
-  grid-gap: 2rem;
-  grid-template-areas:
-    'skill1 skill2 skill3'
-    'skill4 skill5 skill6'
-    'skill7 skill8 skill9';
+.skill-list {
+  display: none;
+  //font-size: var(--font-size-med);
+  margin-left: 5rem;
 
-  justify-items: center;
-  padding-block: 3rem;
+  @include for-tablet-sm {
+    display: block;
+  }
+
+  &__item {
+    @include text-styles;
+    position: relative;
+
+    &::before {
+      background-color: var(--color-white);
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+      content: '';
+      display: inline-block;
+      height: 1.5rem;
+      left: -2rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1.5rem;
+    }
+  }
 }
 
 .skill {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: min-content;
+  width: max-content;
 
   &__title {
     color: var(--color-black);
