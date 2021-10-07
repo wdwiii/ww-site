@@ -1,3 +1,4 @@
+@use 'mixins' as *;
 /*======================
       Typyography
 =======================*/
@@ -33,8 +34,5 @@ body {
 }
 
 .paragraph {
-  font-family: var(--font-standard);
-  font-size: var(--font-size-med);
-  line-height: 2.4rem;
-  margin-block: 1rem;
+  @include text-styles;
 }
