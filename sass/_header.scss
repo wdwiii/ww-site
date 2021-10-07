@@ -8,6 +8,10 @@
   background-size: cover;
   height: 75rem;
 
+  &__btn {
+    align-self: center;
+  }
+
   &__logo {
     grid-column: full-start / full-end;
     justify-self: center;
@@ -28,8 +32,5 @@
       justify-content: space-between;
       height: 90%;
     }
-  }
-  .btn {
-    align-self: center;
   }
 }
