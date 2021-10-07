@@ -1,6 +1,23 @@
+@use 'mixins' as *;
+
 .features {
+  display: grid;
+  grid-column-gap: 1rem;
   grid-row-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   justify-items: center;
+
+  @include for-tablet-lrg {
+    grid-template-columns: repeat(3, minmax(30rem, 1fr));
+  }
+
+  &__btn {
+    grid-column: 1 / -1;
+  }
+
+  &__heading {
+    grid-column: 1 / -1;
+  }
 }
 
 .feature {
@@ -8,7 +25,8 @@
   color: var(--color-gray);
   display: flex;
   flex-direction: column;
-  grid-column: col-start 1 / col-end 4;
+  //grid-column: col-start 1 / col-end 4;
+  justify-self: center;
   max-width: 30rem;
   text-align: center;
 
