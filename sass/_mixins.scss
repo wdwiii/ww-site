@@ -1,0 +1,44 @@
+/*==================
+  Media Query Mixins
+=====================*/
+
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-sm {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-lrg {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-laptop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+/*==========================
+  Paragragh and Text Styles
+============================*/
+
+@mixin text-styles {
+  font-family: var(--font-standard);
+  font-size: var(--font-size-med);
+  line-height: 2.4rem;
+  margin-block: 1rem;
+}
