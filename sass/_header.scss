@@ -1,22 +1,32 @@
+@use 'mixins' as *;
+
 .header {
   background-image: linear-gradient(
-      rgb(235, 253, 251) 35%,
-      rgb(0, 255, 221, 0.35) 70%
+      rgba(0, 255, 221, 0.35) 54%,
+      rgba(0, 255, 221, 0.35) 70%
     ),
     url('../img/hero.jpg');
   background-position: top left 45%;
   background-size: cover;
+  flex-direction: column;
+  justify-content: space-between;
   height: 75rem;
+  box-sizing: border-box;
+
+  @include for-tablet-sm {
+    background-image: linear-gradient(
+        rgba(0, 255, 221, 0.35) 54%,
+        rgba(0, 255, 221, 0.35) 70%
+      ),
+      url(../img/hero-tab.jpg);
+    background-position: top;
+    background-size: 100%;
+    height: 55vh;
+  }
 
   &__btn {
     align-self: center;
-  }
-
-  &__logo {
-    grid-column: full-start / full-end;
-    justify-self: center;
-    margin-top: 5rem;
-    width: 30rem;
+    margin-bottom: 3rem;
   }
 
   .hero {
