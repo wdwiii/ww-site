@@ -14,7 +14,7 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    max-width: 60rem;
+    max-width: 65rem;
     padding-block: 3rem;
   }
 
@@ -35,11 +35,7 @@
 .skill-list {
   display: none;
   //font-size: var(--font-size-med);
-  margin-left: 5rem;
-
-  @include for-tablet-sm {
-    display: block;
-  }
+  margin-left: 3.5rem;
 
   &__item {
     @include text-styles;
@@ -51,12 +47,19 @@
       content: '';
       display: inline-block;
       height: 1.5rem;
-      left: -2rem;
+      left: -3rem;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       width: 1.5rem;
     }
+  }
+}
+
+@include for-tablet-sm {
+  .skill-list,
+  .vertical-delineator {
+    display: block;
   }
 }
 
