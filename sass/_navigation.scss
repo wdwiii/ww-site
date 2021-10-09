@@ -1,13 +1,23 @@
 .navigation {
   align-items: center;
   background-color: var(--color-white);
+  border-bottom: 3px solid var(--color-primary);
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   padding: 1.6rem 3.2rem;
+  position: fixed;
+  width: 100%;
 }
 
 .header__logo {
-  width: 30rem;
+  cursor: pointer;
+  transition: all 0.4s;
+  width: 20rem;
+
+  &:hover {
+    filter: drop-shadow(1rem 1rem 3rem var(--color-primary));
+  }
 }
 
 .menu-icon {
