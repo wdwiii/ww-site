@@ -13,8 +13,9 @@
 
   &__content {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    max-width: 65rem;
+    max-width: 80rem;
     padding-block: 3rem;
   }
 
