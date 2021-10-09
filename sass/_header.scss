@@ -2,45 +2,76 @@
 
 .header {
   background-image: linear-gradient(
-      rgba(0, 255, 221, 0.35) 54%,
-      rgba(0, 255, 221, 0.35) 70%
+      rgb(1 64 56 / 71%) 35%,
+      rgb(0 173 149 / 80%) 70%
     ),
     url('../img/hero.jpg');
+
+  //<<<< Potential Hero Solution >>>>
+  // background: linear-gradient(var(--color-primary), var(--color-primary)),
+  //   url('../img/hero.jpg');
+  // background-blend-mode: darken;
+
   background-position: top left 45%;
+  background-repeat: no-repeat;
   background-size: cover;
+  box-sizing: border-box;
   flex-direction: column;
   justify-content: space-between;
-  height: 75rem;
-  box-sizing: border-box;
+  min-height: 100vh;
 
   @include for-tablet-sm {
-    background-image: linear-gradient(
-        rgba(0, 255, 221, 0.35) 54%,
-        rgba(0, 255, 221, 0.35) 70%
-      ),
-      url(../img/hero-tab.jpg);
     background-position: top;
-    background-size: 100%;
-    height: 55vh;
+    min-height: 70vh;
+  }
+
+  &__btn-wrapper {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10rem;
   }
 
   &__btn {
     align-self: center;
-    margin-bottom: 3rem;
+
+    @include for-phone-only {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .heading-2 {
+    margin: 10rem auto auto;
+    max-width: 62rem;
+    width: 80%;
   }
 
   .hero {
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    &__name,
+    &__tagline {
+      display: block;
+    }
 
-    &__content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      height: 90%;
+    &__name {
+      font-size: 8rem;
+      text-shadow: 3px 1px 1px var(--color-primary);
+    }
+
+    &__tagline {
+      font-size: 3.25rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    @include for-tablet-lrg {
+      &__name {
+        font-size: 10rem;
+      }
+
+      &__tagline {
+        font-size: 5rem;
+      }
     }
   }
 }
