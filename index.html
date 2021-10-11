@@ -16,14 +16,51 @@
     />
   </head>
   <body>
-    <header class="header grid">
-      <div class="menu"></div>
+    <nav class="navigation">
       <img
-        src="img/ww-logo.svg"
+        src="img/ww-logo-global.png"
         alt="Willie Whitfield Web Development"
-        class="header__logo"
+        class="navigation__logo"
       />
-      <button class="btn--transparent header__btn">Let's Connect</button>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
+        alt="navigation icon"
+        class="navigation__icon"
+      />
+      <ul class="navigation__list">
+        <li class="navigation__list-item">
+          <a href="" class="navigation__link">Projects</a>
+        </li>
+        <li class="navigation__list-item">
+          <a href="" class="navigation__link">Resume</a>
+        </li>
+        <li class="navigation__list-item">
+          <a href="" class="navigation__link">About</a>
+        </li>
+        <li class="navigation__list-item">
+          <a href="" class="navigation__link">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header flex">
+      <h2 class="heading-2">
+        <span class="hero__name">Hi, I'm Willie.</span>
+        <span class="hero__tagline"
+          >A Front-End Developer with a passion for creating with code.</span
+        >
+      </h2>
+      <figure class="header__btn-wrapper">
+        <button class="btn--transparent header__btn">Contact Me</button>
+        <button class="btn--transparent header__btn">Resume</button>
+      </figure>
+      <figure class="header__icon-wrapper">
+        <svg class="header__icon">
+          <use href="icons/sprite.svg#icon-linkedin"></use>
+        </svg>
+        <svg class="header__icon">
+          <use href="icons/sprite.svg#icon-github-alt"></use>
+        </svg>
+      </figure>
     </header>
 
     <section class="features">
@@ -125,59 +162,47 @@
             <p class="paragraph skill__title">VSCode</p>
           </figure>
         </div>
+        <div class="vertical-delineator"></div>
         <ul class="skill-list">
           <li class="skill-list__item">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Work with JavaScript, HTML, and CSS to build complex applications.
           </li>
           <li class="skill-list__item">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Develop programs to solve problems using logic and conditions
           </li>
           <li class="skill-list__item">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Plan how data flows between components and how the UI handles data.
           </li>
           <li class="skill-list__item">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Build JavaScript projects using API calls to pull data from external
+            sources
           </li>
           <li class="skill-list__item">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Use version control system to maintain and backup code files
           </li>
         </ul>
       </div>
       <button class="btn--black skills__btn">View My Resume</button>
     </section>
-    <section class="about grid">
-      <h2 class="heading-3">Meet Your Developer</h2>
+    <section class="about flex">
+      <h2 class="heading-3 about__heading">All About Willie</h2>
       <div class="about__content">
-        <p class="paragraph">
-          I am a front-end web developer based in Fort Lauderdale, Florida. I am
-          passionate about designing and developing rich, user-friendly web
-          experiences.
-        </p>
-        <p class="paragraph">
-          I graduated from Barry University where I was a four-year scholarship
-          athlete and Physical Education B.S. recipient. I was fortunate enough
-          to travel the globe playing professional basketball in Mainz, Germany
-          and alongside the World Famous Harlem Globetrotters.
-        </p>
-        <p class="paragraph">
-          What I value most from my journey are the relationships that I have
-          developed over the years. The people that have come into my life have
-          helped unlock my mind and heart, enabling me to take more pride in
-          becoming a better human. I currently teach Special Education and coach
-          high school basketball, where the focus is to bridge gaps between
-          educational barriers and success & equip future leaders with tools to
-          create change.
-        </p>
-        <p class="paragraph">
-          My experiences as a professional basketball player, high school
-          basketball coach and special education teacher translates to web
-          development. As developer, I value the working relationship with my
-          clients, not just the business. The ability to collaborate,
-          communicate clearly, and problem-solve are foundational skills that
-          will be utilized to ensure that you don’t just receive a website that
-          is made for you, but made with you in mind.
-        </p>
-        <button class="btn--read-more">Read More</button>
+        <figure class="about__photo"></figure>
+        <div class="about__text">
+          <p class="paragraph">
+            As someone who's dabbled in HTML & CSS before, I didn't actually
+            recognize my passion for coding until early 2020. Since then, I have
+            learned and practiced the foundations of web development
+            transforming a slight curiosity into a full blown passion.
+          </p>
+          <p class="paragraph">
+            My background as a Special education teacher has developed my
+            ability to break larger concepts into more digestible segments and
+            my background as a professional athlete and coach has strengthened
+            my problem solving skills and attention to detail. Seeking an
+            early-career position in Front-End Development. Feel free to message
+            me for additional information.
+          </p>
       </div>
     </section>
     <footer class="footer">
