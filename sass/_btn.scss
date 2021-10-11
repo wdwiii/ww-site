@@ -12,19 +12,30 @@
   outline: none;
   padding: 0.75rem 3rem;
   margin: 0 1.5rem;
+  transition: all 0.2s;
   width: 21rem;
 
   &--primary {
     @extend .btn;
-    background-color: transparent; //var(--color-primary);
     border-color: var(--color-primary);
     color: var(--color-primary);
+
+    &:hover,
+    &:active {
+      background-color: var(--color-white);
+    }
   }
 
   &--black {
     @extend .btn;
     color: var(--color-black);
     border-color: var(--color-black);
+
+    &:hover,
+    &:active {
+      background-color: var(--color-black);
+      color: var(--color-primary);
+    }
   }
 
   &--gray {
@@ -33,11 +44,16 @@
     border-color: var(--color-gray);
   }
 
-  &--transparent {
+  &--white {
     @extend .btn;
-    background-color: transparent;
     border-color: var(--color-white);
     border-width: 4px;
     box-shadow: none;
+
+    &:hover,
+    &:active {
+      background-color: var(--color-primary);
+      color: var(--color-black);
+    }
   }
 }
