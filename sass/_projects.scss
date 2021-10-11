@@ -26,12 +26,34 @@
   border-radius: 1rem;
   box-shadow: var(--box-shadow-gray);
   color: var(--color-gray);
-  display: flex;
   flex-direction: column;
   justify-self: center;
   max-width: 30rem;
   padding: 2rem 1rem;
   text-align: center;
+
+  &--1,
+  &--2,
+  &--3 {
+    display: flex;
+  }
+
+  &--4 {
+    display: none;
+
+    @include for-tablet-sm {
+      display: flex;
+    }
+  }
+
+  &--5,
+  &--6 {
+    display: none;
+
+    @include for-tablet-lrg {
+      display: flex;
+    }
+  }
 
   &__photo-wrapper {
     height: 22.5rem;
@@ -78,5 +100,11 @@
     height: 3.5rem;
     width: 3.5rem;
     margin-bottom: 0.5rem;
+    transition: all 0.2s;
+
+    &:hover {
+      fill: var(--color-black);
+      transform: scale(1.1);
+    }
   }
 }
