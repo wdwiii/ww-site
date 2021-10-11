@@ -29,16 +29,16 @@
       />
       <ul class="navigation__list">
         <li class="navigation__list-item">
-          <a href="" class="navigation__link">Projects</a>
+          <a href="#projects" class="navigation__link">Projects</a>
         </li>
         <li class="navigation__list-item">
           <a href="" class="navigation__link">Resume</a>
         </li>
         <li class="navigation__list-item">
-          <a href="" class="navigation__link">About</a>
+          <a href="#about" class="navigation__link">About</a>
         </li>
         <li class="navigation__list-item">
-          <a href="" class="navigation__link">Contact Me</a>
+          <a href="#contact" class="navigation__link">Contact Me</a>
         </li>
       </ul>
     </nav>
@@ -50,16 +50,20 @@
         >
       </h2>
       <figure class="header__btn-wrapper">
-        <button class="btn--transparent header__btn">Contact Me</button>
-        <button class="btn--transparent header__btn">Resume</button>
+        <button class="btn--white header__btn">Contact Me</button>
+        <button class="btn--white header__btn">Resume</button>
       </figure>
       <figure class="header__icon-wrapper">
-        <svg class="header__icon">
-          <use href="icons/sprite.svg#icon-linkedin"></use>
-        </svg>
-        <svg class="header__icon">
-          <use href="icons/sprite.svg#icon-github-alt"></use>
-        </svg>
+        <a href="https://www.linkedin.com/in/wdwiii/" target="_blank">
+          <svg class="header__icon">
+            <use href="icons/sprite.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+        <a href="https://github.com/wdwiii" target="_blank">
+          <svg class="header__icon">
+            <use href="icons/sprite.svg#icon-github-alt"></use>
+          </svg>
+        </a>
       </figure>
     </header>
 
@@ -103,9 +107,9 @@
       <!-- <button class="btn--gray features__btn">Check My Work</button> -->
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <h2 class="heading-2 projects__heading">Recent Projects</h2>
-      <div class="project">
+      <div class="project project--1">
         <figure class="project__photo-wrapper">
           <a href="https://i4u8y.csb.app" target="_blank"><img src="img/projects/sticky-notes-app.png"
               alt="Sticky Note Project" class="project__photo"></a>
@@ -133,7 +137,7 @@
         </div>
       </div>
 
-      <div class="project">
+      <div class="project project--2">
         <figure class="project__photo-wrapper">
           <a href="https://wdwiii.github.io/guess-the-word/" target="_blank"><img src="img/projects/guess-the-word.png"
               alt="Guess the Word Game" class="project__photo"></a>
@@ -158,7 +162,7 @@
         </div>
       </div>
 
-      <div class="project">
+      <div class="project project--3">
         <figure class="project__photo-wrapper">
           <a href="https://wdwiii.github.io/random-user-generator/" target="_blank"><img src="img/projects/random-user.png"
               alt="Random User Generator" class="project__photo"></a>
@@ -183,7 +187,7 @@
         </div>
       </div>
 
-      <div class="project">
+      <div class="project project--4">
         <figure class="project__photo-wrapper">
           <a href="https://wdwiii.github.io/nexter/" target="_blank"><img src="img/projects/nexter.png"
               alt="Random User Generator" class="project__photo"></a>
@@ -290,7 +294,7 @@
       </div>
       <button class="btn--black skills__btn">View My Resume</button>
     </section>
-    <section class="about flex">
+    <section class="about flex" id="about">
       <h2 class="heading-3 about__heading">All About Willie</h2>
       <div class="about__content">
         <figure class="about__photo"></figure>
@@ -311,7 +315,7 @@
           </p>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <img
         src="img/ww-logo-alt-2.svg"
         alt="Willie Whitfield Web Development"
@@ -324,24 +328,31 @@
         A strong site <b><i>amplifies</i></b> it.
       </h2>
       <nav class="footer__nav">
-        <svg class="footer__icon">
-          <use href="icons/sprite.svg#icon-linkedin"></use>
-        </svg>
-        <svg class="footer__icon">
-          <use href="icons/sprite.svg#icon-github-alt"></use>
-        </svg>
-        <svg class="footer__icon">
-          <use href="icons/sprite.svg#icon-twitter"></use>
-        </svg>
-        <svg class="footer__icon">
-          <use href="icons/sprite.svg#icon-slack"></use>
-        </svg>
-        <svg class="footer__icon">
-          <use href="icons/sprite.svg#icon-instagram"></use>
-        </svg>
-        <svg class="footer__icon">
-          <use href="icons/sprite.svg#icon-envelope"></use>
-        </svg>
+        <a href="https://www.linkedin.com/in/wdwiii/" class="footer__link">
+          <svg class="footer__icon">
+            <use href="icons/sprite.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+        <a href="https://github.com/wdwiii" class="footer__link">
+          <svg class="footer__icon">
+            <use href="icons/sprite.svg#icon-github-alt"></use>
+          </svg>
+        </a>
+        <a href="https://twitter.com/wdw_iii" class="footer__link">
+          <svg class="footer__icon">
+            <use href="icons/sprite.svg#icon-twitter"></use>
+          </svg>
+        </a>
+        <a href="https://app.slack.com/client/T9A5T142J/CJXQT6H43/user_profile/U019F6H761X" class="footer__link">
+          <svg class="footer__icon">
+            <use href="icons/sprite.svg#icon-slack"></use>
+          </svg>
+        </a>
+        <a href="mailto:hello@williewhitfield.com" class="footer__link">
+          <svg class="footer__icon">
+            <use href="icons/sprite.svg#icon-envelope"></use>
+          </svg>
+        </a>
       </nav>
       <span class="footer__attribution"
         >Designed and Created by
