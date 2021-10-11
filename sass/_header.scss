@@ -6,12 +6,6 @@
       rgb(0 173 149 / 80%) 70%
     ),
     url('../img/hero.jpg');
-
-  //<<<< Potential Hero Solution >>>>
-  // background: linear-gradient(var(--color-primary), var(--color-primary)),
-  //   url('../img/hero.jpg');
-  // background-blend-mode: darken;
-
   background-position: top left 45%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +24,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 10rem;
+  }
+
+  &__icon-wrapper {
+    display: flex;
+    fill: var(--color-white);
+    gap: 5rem;
+    justify-content: center;
+    margin-block: 3rem 15rem;
+
+    @include for-tablet-sm {
+      margin-block: 5rem;
+    }
+  }
+
+  &__icon {
+    height: 5rem;
+    width: 5rem;
   }
 
   &__btn {
@@ -42,7 +52,7 @@
   }
 
   .heading-2 {
-    margin: 10rem auto auto;
+    margin: 15rem auto auto;
     max-width: 62rem;
     width: 80%;
   }
@@ -64,13 +74,13 @@
       letter-spacing: 1px;
     }
 
-    @include for-tablet-lrg {
+    @include for-tablet-sm {
       &__name {
         font-size: 10rem;
       }
 
       &__tagline {
-        font-size: 5rem;
+        font-size: 4rem;
       }
     }
   }
