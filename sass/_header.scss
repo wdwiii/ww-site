@@ -28,19 +28,28 @@
 
   &__icon-wrapper {
     display: flex;
-    fill: var(--color-white);
     gap: 5rem;
     justify-content: center;
 
     @include for-tablet-sm {
       margin-block: 5rem;
     }
+
+    @include for-tablet-lrg {
+      margin-block: 1rem;
+    }
   }
 
   &__icon {
+    fill: var(--color-white);
     height: 5rem;
     width: 5rem;
     margin-bottom: 2.5rem;
+    transition: all 0.2s;
+
+    &:hover {
+      fill: var(--color-primary);
+    }
   }
 
   &__btn {
