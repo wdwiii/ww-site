@@ -1,6 +1,6 @@
 @use 'mixins' as *;
 
-.navigation {
+.nav {
   align-items: center;
   background-color: var(--color-white);
   border-bottom: 3px solid var(--color-primary);
@@ -9,12 +9,22 @@
   justify-content: space-between;
   padding: 1.6rem 3.2rem;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 10;
 
-  &__icon {
-    height: 4rem;
-    width: 4rem;
+  .hamburger {
+    .bar {
+      background-color: var(--color-black);
+      height: 3px;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      width: 3rem;
+
+      &:not(:last-child) {
+        margin-bottom: 7px;
+      }
+    }
 
     @media only screen and (min-width: 600px) {
       display: none;
@@ -31,35 +41,82 @@
     }
   }
 
-  &__list {
-    display: none;
+  &__menu {
+    align-items: center;
+    background-color: var(--color-black);
+    border-top: 4px solid var(--color-primary);
+    display: flex;
+    flex-direction: column;
     font-family: var(--font-standard);
-    font-size: var(--font-size-med);
     gap: 2rem;
+    justify-content: center;
+    height: calc(100vh - 7.5rem);
+    left: 0;
+    position: fixed;
+    top: 7.5rem;
+    transform: translateX(100%);
+    transition: all 0.2s, transform 0.5s;
+    width: 100%;
 
-    @include for-tablet-sm {
-      display: flex;
+    @media screen and (orientation: landscape) {
+      height: 7.5rem;
+      top: 0;
     }
 
-    &-item {
+    @media screen and (min-width: 600px) {
+      height: 7.5rem;
+      top: 0;
+    }
+
+    @include for-tablet-sm {
+      background: none;
+      border-top: none;
+      display: flex;
+      flex-direction: row;
       position: relative;
-      max-width: max-content;
+      transform: translateX(0);
+      width: auto;
+    }
+  }
 
-      &::after {
-        background-color: var(--color-primary);
-        content: '';
-        height: 3px;
-        left: 0;
-        top: calc(100% + 2px);
-        transform: scaleX(0);
-        transition: all 0.2s;
-        position: absolute;
-        width: 100%;
-      }
+  &__item {
+    color: var(--color-primary);
+    font-family: var(--font-display);
+    font-size: 6rem;
+    position: relative;
+    padding: 2rem;
+    max-width: max-content;
 
-      &:hover::after {
-        transform: scaleX(1);
+    &::after {
+      background-color: var(--color-primary);
+      content: '';
+      height: 3px;
+      left: 0;
+      top: calc(100% + 2px);
+      transform: scaleX(0);
+      transition: all 0.2s;
+      position: absolute;
+      width: 100%;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+    }
+
+    @include for-tablet-sm {
+      color: var(--color-black);
+      font-size: var(--font-size-lrg);
+      padding: 0;
+    }
+
+    &--home {
+      @include for-tablet-sm {
+        display: none;
       }
     }
   }
+}
+
+.show-menu {
+  transform: translateX(0%);
 }
