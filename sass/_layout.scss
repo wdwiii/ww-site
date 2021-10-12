@@ -26,6 +26,7 @@
 
 section {
   padding: 5rem 1.6rem;
+  scroll-margin-top: 6rem; //used to adjust an element’s snap area (the box that defines where the element will be snapped to)
 
   @include for-tablet-sm {
     padding: 5rem 3.2rem;
