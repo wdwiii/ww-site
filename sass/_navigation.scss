@@ -7,7 +7,7 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  padding: 1.6rem 3.2rem;
+  padding: 1.6rem 3rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -85,11 +85,8 @@
   }
 
   &__item {
-    color: var(--color-primary);
-    font-family: var(--font-display);
-    font-size: 6rem;
-    position: relative;
     padding: 2rem;
+    position: relative;
     max-width: max-content;
 
     &::after {
@@ -104,14 +101,23 @@
       width: 100%;
     }
 
+    @include for-tablet-sm {
+      padding: 0;
+    }
+
     &:hover::after {
       transform: scaleX(1);
     }
+  }
+
+  &__link {
+    color: var(--color-primary);
+    font-family: var(--font-display);
+    font-size: 5rem;
 
     @include for-tablet-sm {
       color: var(--color-black);
       font-size: var(--font-size-lrg);
-      padding: 0;
     }
   }
 }
