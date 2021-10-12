@@ -93,11 +93,6 @@ section {
 html {
   font-size: 62.5%;
 }
-@media (min-width: 900px) {
-  html {
-    font-size: 57.5%;
-  }
-}
 
 body {
   color: var(--color-black);
