@@ -4,6 +4,10 @@
 =======================*/
 html {
   font-size: 62.5%; //Default font-size is 10px
+
+  @include for-tablet-lrg {
+    font-size: 57.5%;
+  }
 }
 
 body {
