@@ -14,35 +14,46 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Teko:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <script src="js/index.js" defer></script>
   </head>
   <body>
-    <nav class="navigation">
-      <img
-        src="img/ww-logo-global.png"
-        alt="Willie Whitfield Web Development"
-        class="navigation__logo"
-      />
-      <img
+    <nav class="nav">
+      <a href="#home">
+        <img
+          src="img/ww-logo-global.png"
+          alt="Willie Whitfield Web Development"
+          class="nav__logo"
+        />
+      </a>
+      <!-- <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
         alt="navigation icon"
         class="navigation__icon"
-      />
-      <ul class="navigation__list">
-        <li class="navigation__list-item">
-          <a href="#projects" class="navigation__link">Projects</a>
+      /> -->
+      <ul class="nav__menu">
+        <li class="nav__item nav__item--home">
+          <a href="#home" class="nav__link">Home</a>
         </li>
-        <li class="navigation__list-item">
-          <a href="" class="navigation__link">Resume</a>
+        <li class="nav__item">
+          <a href="#projects" class="nav__link">Projects</a>
         </li>
-        <li class="navigation__list-item">
-          <a href="#about" class="navigation__link">About</a>
+        <li class="nav__item">
+          <a href="" class="nav__link">Resume</a>
         </li>
-        <li class="navigation__list-item">
-          <a href="#contact" class="navigation__link">Contact Me</a>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">Contact Me</a>
         </li>
       </ul>
+      <div class="hamburger">
+        <div class="bar bar--1"></div>
+        <div class="bar bar--2"></div>
+        <div class="bar bar--3"></div>
+      </div>
     </nav>
-    <header class="header flex">
+    <header class="header flex" id="home">
       <h2 class="heading-2">
         <span class="hero__name">Hi, I'm Willie.</span>
         <span class="hero__tagline"
@@ -54,12 +65,12 @@
         <button class="btn--white header__btn">Resume</button>
       </figure>
       <figure class="header__icon-wrapper">
-        <a href="https://www.linkedin.com/in/wdwiii/" target="_blank">
+        <a href="https://www.linkedin.com/in/wdwiii/">
           <svg class="header__icon">
             <use href="icons/sprite.svg#icon-linkedin"></use>
           </svg>
         </a>
-        <a href="https://github.com/wdwiii" target="_blank">
+        <a href="https://github.com/wdwiii">
           <svg class="header__icon">
             <use href="icons/sprite.svg#icon-github-alt"></use>
           </svg>
@@ -111,7 +122,7 @@
       <h2 class="heading-2 projects__heading">Recent Projects</h2>
       <div class="project project--1">
         <figure class="project__photo-wrapper">
-          <a href="https://i4u8y.csb.app" target="_blank"><img src="img/projects/sticky-notes-app.png"
+          <a href="https://i4u8y.csb.app"><img src="img/projects/sticky-notes-app.png"
               alt="Sticky Note Project" class="project__photo"></a>
         </figure>
         <h4 class="project__title">Super Sticky Notes</h4>
@@ -122,13 +133,13 @@
         <p class="project__skills paragraph"><span>Skills: </span>React, JSX, Components</p>
         <p class="project__tools paragraph"><span>Tools: </span>CodeSandbox, Props, State</p>
         <div class="project__link-wrapper">
-          <a class="project__link" href="https://codesandbox.io/s/jm56u" target="_blank">
+          <a class="project__link" href="https://codesandbox.io/s/jm56u">
             <svg class="project__link-icon">
               <use href="icons/sprite.svg#icon-github"></use>
             </svg>
             View Source
           </a>
-          <a class="project__link" href="https://jm56u.csb.app/" target="_blank">
+          <a class="project__link" href="https://jm56u.csb.app/">
             <svg class="project__link-icon">
               <use href="icons/sprite.svg#icon-external-link"></use>
             </svg>
@@ -139,7 +150,7 @@
 
       <div class="project project--2">
         <figure class="project__photo-wrapper">
-          <a href="https://wdwiii.github.io/guess-the-word/" target="_blank"><img src="img/projects/guess-the-word.png"
+          <a href="https://wdwiii.github.io/guess-the-word/"><img src="img/projects/guess-the-word.png"
               alt="Guess the Word Game" class="project__photo"></a>
         </figure>
         <h4 class="project__title">Guess the Word</h4>
@@ -147,13 +158,13 @@
         <p class="project__skills paragraph"><span>Skills: </span>JavaScript, CSS</p>
         <p class="project__tools paragraph"><span>Tools: </span>REST API, JSON</p>
         <div class="project__link-wrapper">
-          <a class="project__link" href="https://github.com/wdwiii/guess-the-word" target="_blank">
+          <a class="project__link" href="https://github.com/wdwiii/guess-the-word">
             <svg class="project__link-icon">
               <use href="icons/sprite.svg#icon-github"></use>
             </svg>
             View Source
           </a>
-          <a class="project__link" href="https://wdwiii.github.io/guess-the-word/" target="_blank">
+          <a class="project__link" href="https://wdwiii.github.io/guess-the-word/">
             <svg class="project__link-icon">
               <use href="icons/sprite.svg#icon-external-link"></use>
             </svg>
@@ -164,7 +175,7 @@
 
       <div class="project project--3">
         <figure class="project__photo-wrapper">
-          <a href="https://wdwiii.github.io/random-user-generator/" target="_blank"><img src="img/projects/random-user.png"
+          <a href="https://wdwiii.github.io/random-user-generator/"><img src="img/projects/random-user.png"
               alt="Random User Generator" class="project__photo"></a>
         </figure>
         <h4 class="project__title">Random User Generator</h4>
@@ -172,13 +183,13 @@
         <p class="project__skills paragraph"><span>Skills: </span>JavaScript, CSS, Flexbox</p>
         <p class="project__tools paragraph"><span>Tools: </span>REST API, SASS</p>
         <div class="project__link-wrapper">
-          <a class="project__link" href="https://github.com/wdwiii/random-user-generator" target="_blank">
+          <a class="project__link" href="https://github.com/wdwiii/random-user-generator">
             <svg class="project__link-icon">
               <use href="icons/sprite.svg#icon-github"></use>
             </svg>
             View Source
           </a>
-          <a class="project__link" href="https://wdwiii.github.io/random-user-generator/" target="_blank">
+          <a class="project__link" href="https://wdwiii.github.io/random-user-generator/">
             <svg class="project__link-icon">
               <use href="icons/sprite.svg#icon-external-link"></use>
             </svg>
@@ -189,7 +200,7 @@
 
       <div class="project project--4">
         <figure class="project__photo-wrapper">
-          <a href="https://wdwiii.github.io/nexter/" target="_blank"><img src="img/projects/nexter.png"
+          <a href="https://wdwiii.github.io/nexter/"><img src="img/projects/nexter.png"
               alt="Random User Generator" class="project__photo"></a>
         </figure>
         <h4 class="project__title">Nexter Realtor Company</h4>
@@ -197,13 +208,13 @@
         <p class="project__skills paragraph"><span>Skills: </span>CSS Grid, Flexbox, Psuedo-elements</p>
         <p class="project__tools paragraph"><span>Tools: </span>SASS</p>
         <div class="project__link-wrapper">
-          <a class="project__link" href="https://github.com/wdwiii/nexter" target="_blank">
+          <a class="project__link" href="https://github.com/wdwiii/nexter">
             <svg class="project__link-icon">
               <use href="icons/sprite.svg#icon-github"></use>
             </svg>
             View Source
           </a>
-          <a class="project__link" href="https://wdwiii.github.io/nexter/" target="_blank">
+          <a class="project__link" href="https://wdwiii.github.io/nexter/">
             <svg class="project__link-icon">
               <use href="icons/sprite.svg#icon-external-link"></use>
             </svg>
