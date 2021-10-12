@@ -49,9 +49,10 @@
     flex-direction: column;
     font-family: var(--font-standard);
     gap: 2rem;
-    justify-content: center;
+    justify-content: flex-start;
     height: calc(100vh - 7.5rem);
     left: 0;
+    padding-top: 3rem;
     position: fixed;
     top: 7.5rem;
     transform: translateX(100%);
@@ -60,11 +61,15 @@
 
     @media screen and (orientation: landscape) {
       height: 7.5rem;
+      justify-content: center;
+      padding: 0;
       top: 0;
     }
 
     @media screen and (min-width: 600px) {
       height: 7.5rem;
+      justify-content: center;
+      padding: 0;
       top: 0;
     }
 
