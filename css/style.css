@@ -363,11 +363,6 @@ body {
     padding: 0;
   }
 }
-@media (min-width: 600px) {
-  .nav__item--home {
-    display: none;
-  }
-}
 
 .show-menu {
   transform: translateX(0%);

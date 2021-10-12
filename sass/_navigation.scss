@@ -113,12 +113,6 @@
       font-size: var(--font-size-lrg);
       padding: 0;
     }
-
-    &--home {
-      @include for-tablet-sm {
-        display: none;
-      }
-    }
   }
 }
 
