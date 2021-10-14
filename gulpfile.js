@@ -1,23 +1,22 @@
-'use strict';
+"use strict";
 
-const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const browserSync = require('browser-sync').create();
-const cleanCss = require('gulp-clean-css');
-const purgeCss = require('gulp-purgecss');
-const autoPrefixer = require('gulp-autoprefixer');
-const extensionRename = require('gulp-rename');
+const gulp = require("gulp");
+const sass = require("gulp-sass")(require("sass"));
+const browserSync = require("browser-sync").create();
+const cleanCss = require("gulp-clean-css");
+const autoPrefixer = require("gulp-autoprefixer");
+const extensionRename = require("gulp-rename");
 
 //Compile SCSS files into standard CSS
 function style() {
   //1. Find scss file
   return (
     gulp
-      .src('./sass/*.scss')
+      .src("./sass/*.scss")
       //2. Pass file through sass compiler
-      .pipe(sass().on('error', sass.logError))
+      .pipe(sass().on("error", sass.logError))
       //3. Choose destination for compiled css
-      .pipe(gulp.dest('./css'))
+      .pipe(gulp.dest("./css"))
       //4.Sync changes to browser
       .pipe(browserSync.stream())
   );
@@ -27,12 +26,12 @@ function style() {
 function watch() {
   browserSync.init({
     server: {
-      baseDir: './',
+      baseDir: "./",
     },
   });
-  gulp.watch('./sass/*.scss', style);
-  gulp.watch('./*.html').on('change', browserSync.reload);
-  gulp.watch('./js/*.js').on('change', browserSync.reload);
+  gulp.watch("./sass/*.scss", style);
+  gulp.watch("./*.html").on("change", browserSync.reload);
+  gulp.watch("./js/*.js").on("change", browserSync.reload);
 }
 
 function start() {
@@ -42,20 +41,15 @@ function start() {
 
 function buildCss(done) {
   gulp
-    .src('./css/style.css')
-    .pipe(
-      purgeCss({
-        content: ['./**/*.html'],
-      })
-    )
+    .src("./css/style.css")
     .pipe(autoPrefixer())
-    .pipe(cleanCss({ compatibility: 'ie8' }))
+    .pipe(cleanCss({ compatibility: "ie8" }))
     .pipe(
       extensionRename(function (path) {
-        path.extname = '.min.css';
+        path.extname = ".min.css";
       })
     )
-    .pipe(gulp.dest('./css/'));
+    .pipe(gulp.dest("./css/"));
   done();
 }
 
