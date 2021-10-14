@@ -56,7 +56,6 @@ function buildCss(done) {
 exports.style = style;
 exports.watch = watch;
 exports.start = start;
-exports.purgeCss = purgeCss;
 exports.autoPrefixer = autoPrefixer;
 exports.cleanCss = cleanCss;
 exports.buildCss = buildCss;
