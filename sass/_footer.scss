@@ -56,11 +56,22 @@
   }
 
   &__attribution {
+    color: var(--color-gray);
     font-family: var(--font-standard);
     font-size: var(--font-size-sm);
   }
 
   .name {
     font-size: var(--font-size-med);
+    transition: all 0.2s;
+
+    &:link,
+    &:visited {
+      color: var(--color-black);
+    }
+
+    &:hover {
+      color: var(--color-white);
+    }
   }
 }
