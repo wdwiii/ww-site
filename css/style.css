@@ -662,6 +662,7 @@ body {
   color: var(--color-white);
   font-size: var(--font-size-lrg);
   text-align: center;
+  text-shadow: 1px 1px 4px #565656;
 }
 .footer__nav {
   align-items: center;
